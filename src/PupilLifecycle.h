@@ -29,8 +29,6 @@
 
 #include <cmath>
 
-#include <GL/glut.h>
-
 #include "Singleton.h"
 #include "Vector.h"
 #include "Util.h"

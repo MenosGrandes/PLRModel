@@ -18,6 +18,7 @@
 
 #ifndef UTIL_H_
 #define UTIL_H_
+#include <time.h>
 
 float totalTime;
 
