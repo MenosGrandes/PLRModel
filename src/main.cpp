@@ -1,6 +1,6 @@
 #include "PupilLifecycle.h"
-#include "matplotlibcpp.h"
-namespace plt = matplotlibcpp;
+
+
 float pupilDiameterInMM = 7.1; // Starts with a large pupil
 float lightIntensityInBlondels = -2; // Light intensity reaching the retina
 float timeInMilliseconds = 100; // time
@@ -27,24 +27,13 @@ int main(int argc, char *argv[]) {
     }
 
     lightIntensityInBlondels = -2;
-/*
     for (int i=0; i<20; i ++) {	
-	    std::cout << "In time " << timeInMilliseconds 
-		      << " with light intensity of " << lightIntensityInBlondels
-		      << ", the pupil diameter is " << evaluateDiameter() << std::endl;
+	    std::cout <<timeInMilliseconds<<" " 
+		      <<lightIntensityInBlondels<<" "
+		      << evaluateDiameter() << std::endl;
     }
 
-    lightIntensityInBlondels = 2;
 
-    for (int i=0; i<20; i ++) {	
-	    std::cout << "In time " << timeInMilliseconds 
-		      << " with light intensity of " << lightIntensityInBlondels
-		      << ", the pupil diameter is " << evaluateDiameter() << std::endl;
-    }
-*/
-    
-    plt::plot({1,3,2,4});
-    plt::show();
     
     return 0;
 }
