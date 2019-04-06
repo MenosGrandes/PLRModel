@@ -30,3 +30,7 @@
 *.exe
 *.out
 *.app
+# exclude cythongenerated class
+src\PYwrapper\build
+*.pyd
+src\PYwrapper\build\PupilDynamicsModel_wrapper.cpp
