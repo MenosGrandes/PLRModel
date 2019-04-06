@@ -18,7 +18,7 @@
 
 #ifndef VECTOR_H_
 #define VECTOR_H_
-
+#include <cmath>
 /**
  * Simple Linear Algebra Vector class
  */ 
@@ -256,7 +256,7 @@ public:
 	}	
 	
 	float angleInDegree( const Vector<C,N> &v2 ) {
-	    return acos(dot(v2)/(length() * v2.length())) * 180/ M_PI;
+	    return acos(dot(v2)/(length() * v2.length())) * 180/ 3.14159265358979323846;
 	}
 	
 	float angleInRadians( const Vector<C,N> &v2 ) {

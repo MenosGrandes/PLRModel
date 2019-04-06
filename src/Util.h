@@ -19,7 +19,7 @@
 #ifndef UTIL_H_
 #define UTIL_H_
 #include <time.h>
-
+#include <cmath>
 float totalTime;
 
 double EPSLON = 1.0E-4;
@@ -49,11 +49,11 @@ int lowerCase(int c) {
 }
 
 double degToRad(double degree) {
-	return degree *(M_PI / 180);
+	return degree *(3.14159265358979323846 / 180);
 }
 
 double radToDeg(double radians) {
-	return radians * (180/M_PI);
+	return radians * (180/3.14159265358979323846);
 }
 
 char * convert(std::string teste) {

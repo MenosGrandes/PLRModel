@@ -52,3 +52,9 @@ cdef class PyDegrootAndGebhardModel(PyPupilDynamicsModel):
         return self.thisptr.pupilDiameterAt(lightIntensity)
     def pupilDiameterWithMillilamberts(self,float lightIntensity):
         return self.thisptr.pupilDiameterWithMillilamberts(lightIntensity)
+
+from libcpp.vector cimport vector
+#########################
+cdef extern from "../Vector.h":
+    cdef cppclass Vector[T,N]:
+        Vector()

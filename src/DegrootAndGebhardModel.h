@@ -36,7 +36,7 @@ public:
 	 * return diameter in mm. 
 	 */
 	virtual float pupilDiameterAt(float lightIntensity) {
-		return pupilDiameterWithMillilamberts(Conversion::blondelToMillilambert(lightIntensity));
+		return pupilDiameterWithMillilamberts(/*Conversion::blondelToMillilambert(*/lightIntensity/*)*/);
 	}	
 	
 	/**

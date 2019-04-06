@@ -18,7 +18,7 @@
 
 #ifndef CONVERSION_H_
 #define CONVERSION_H_
-
+#include <cmath>
 /**
  * Physical Conversion Class.
  * Based On: http://www.unitconversion.org/unit_converter/luminance.html
@@ -123,12 +123,12 @@ public:
 	// m  => m^2  
 	
 	static float diameterToArea(float diameter) {
-		return M_PI * powf(diameter/2.0f, 2);
+		return 3.14159265358979323846 * powf(diameter/2.0f, 2);
 	}
 	
 	// 1 area = 3.14 area
 	static float areaToDiameter(float area) {
-		return sqrt(area / M_PI) * 2;
+		return sqrt(area / 3.14159265358979323846) * 2;
 	}
 	
 	// 1 Lambert = 10 lumens / cm^2
