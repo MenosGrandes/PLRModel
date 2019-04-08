@@ -6,4 +6,11 @@ for line in open('data.txt', 'r'):
   Y.append(values[2])
 
 plt.plot(X, Y)
+plt.axvline(x=0.22058956)
+
+
+plt.xlabel('time [ms]')
+plt.ylabel('Pupil size [mm]')
+plt.grid(True)
+
 plt.show()

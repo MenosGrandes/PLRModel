@@ -25,7 +25,8 @@
  * 
  * Equation 16
  */ 
-class PamplonaAndOliveiraModel : public PupilDynamicsModel {
+class PamplonaAndOliveiraModel : public PupilDynamicsModel 
+{
 	
 	// x = time (milliseconds) , 
 	// y = intensity (lumens), 
@@ -133,15 +134,18 @@ public:
 		return 5.2 - 0.45 * logarithmOfRetinalFluxRate(latency); 
 	}
 		
-	float arcTanH(float x) {
+	float arcTanH(float x) 
+    {
 		return 0.5f * (log(1+x) - log(1-x));
 	}
 
-	float m(float diameter) {
+	float m(float diameter) 
+    {
 		return arcTanH((diameter - 4.9) / 3);
 	}
 
-	float evaluateLeftSide(float time, float dD) {
+	float evaluateLeftSide(float time, float dD) 
+    {
 		float dT = (time - (history.history.end()-1)->x()) / 500.0f;
 		float prevDiammeter = Conversion::areaToDiameter(history.history[history.history.size()-1].z());
 		
@@ -154,15 +158,16 @@ public:
 		}
 			
 		if (equals(dD, 0.000f,0.0001f) || equals(dT, 0.000f,0.0001f))
-			return 2.3025*m(diameter);
+        {
+            return 2.3025*m(diameter);
+        }
 		else
-			return dM/dT + 2.3025*m(diameter);
+        {
+            return dM/dT + 2.3025*m(diameter);
+        }
 	}
-	
-	/**
-	 * 
-	 */ 
-	float evaluateDiameter(float latency, float time) {
+	float evaluateDiameter(float latency, float time) 
+    {
 		// Compute the right side of the equation. This will not change.
 		float rightSide = muscleActivity(latency);
 		float leftSide;
@@ -172,48 +177,51 @@ public:
 		float leftSideAnt = 0;
 		float operation = 1;
 		
-		for (int i=0; i<100; i++) {
+		for (int i=0; i<100; i++) 
+        {
 			leftSide = evaluateLeftSide(time, dD);
 			
 			// If it found the right value, return.
-			if (equals(leftSide, rightSide, 0.001)) {
+			if (equals(leftSide, rightSide, 0.001)) 
+            {
 				float prevDiameter = Conversion::areaToDiameter((history.history.end()-1)->z());
 				return prevDiameter+dD;
 			}
 			
-			if (leftSide - leftSideAnt > 0.001 && rightSide > leftSide) {
+			if (leftSide - leftSideAnt > 0.001 && rightSide > leftSide) 
+            {
 				// continue 
-			} else if (leftSide - leftSideAnt < -0.001 && rightSide < leftSide) {
+			} 
+            else if (leftSide - leftSideAnt < -0.001 && rightSide < leftSide) 
+            {
 				// continue 
-			} else {
+			} 
+            else 
+            {
 				// invert the search
 				operation = operation * -1;
-				
 				// check to decrease the step size.
-				if (i>0 && pass > 0.0000001f) {
+				if (i>0 && pass > 0.0000001f) 
+                {
 					dD = dD + operation *  pass; // back one.
-					
 					// if the new value is equal to the previous one, can be a solution
-					if (equals(leftSide, leftSideAnt, 0.00001)) {
-						
+					if (equals(leftSide, leftSideAnt, 0.00001)) 
+                    {
 						// check if a solution is possible
-						if ((operation < 0 && leftSide > rightSide)
-						||  (operation > 0 && leftSide < rightSide)) {
+						if ((operation < 0 && leftSide > rightSide) ||  (operation > 0 && leftSide < rightSide)) 
+                        {
 							float prevDiameter = Conversion::areaToDiameter((history.history.end()-1)->z());
 							return prevDiameter+dD;
 						}
 						
 						// go back one step
 						dD = dD + operation *  pass; // back one.	
-					}		
-										
+					}					
 					// decrease the step size.
 					pass /= 2.0f;
 				}
 			}
-			
 			dD = dD + operation * pass;
-			
 			// store the value
 			leftSideAnt = leftSide;
 		}
@@ -225,19 +233,16 @@ public:
 		return prevDiameter;
 	}
 	
-	float pupilDiameterAt(float intensity, float latency, float time) {
-		float diameter = evaluateDiameter(latency, time);
-		
-		//std::cout << intensity << " " << diameter << std::endl;
-		
+	float pupilDiameterAt(float intensity, float latency, float time) 
+    {
+		float diameter = evaluateDiameter(latency, time);		
 		addPulse(time,intensity, Conversion::diameterToArea(diameter));
 		return diameter;
 	}
-
-	float getLumens(float diameter) {
+	float getLumens(float diameter) 
+    {
 		return 0;
 	}
-
 	
 };
 
