@@ -1,0 +1,16 @@
+{
+    "startingValues": 
+    {
+        "pupilDiameterInMM": 4,
+        "lightIntensityInBlondels":1
+    },
+    "changesOfLight":
+    [
+    {"light":1.5,"timeMS":8},
+    {"light":1,"timeMS":4},
+    {"light":1.2,"timeMS":12},
+    {"light":1.54,"timeMS":15},
+    {"light":-0.5,"timeMS":6},
+    {"light":2,"timeMS":12}
+    ]
+}
