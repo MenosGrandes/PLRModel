@@ -226,7 +226,7 @@ public:
 			leftSideAnt = leftSide;
 		}
 		
-		std::cout << "The Equation Diverged: " << dD << " " << pass << " "<< leftSide << " "<< rightSide << " " << std::endl;
+		//std::cout << "The Equation Diverged: " << dD << " " << pass << " "<< leftSide << " "<< rightSide << " " << std::endl;
 		
 		// If it fails, return the last pupil diameter.
 		float prevDiameter = Conversion::areaToDiameter((history.history.end()-1)->z());

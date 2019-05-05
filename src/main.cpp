@@ -1,10 +1,25 @@
 #include "PupilLifecycle.h"
-
-float pupilDiameterInMM = 7.1; // Starts with a large pupil in mm. 
+#include "json.hpp"
+#include <fstream>
+#include <queue>
+float pupilDiameterInMM = 0; // Starts with a large pupil in mm. 
 float lightIntensityInBlondels = -2; // Light intensity reaching the retina in Blondels
-float timeInMilliseconds = 0; // time
+float timeInMilliseconds = 100; // time
 
 PamplonaAndOliveiraModel model; // PupilLightReflex Model.
+
+using json = nlohmann::json;
+
+class LightTime
+{
+    public:
+    LightTime(float _lightIntensityInBlondels,float _timeMS):timeMS(_timeMS),lightIntensityInBlondels(_lightIntensityInBlondels){};
+    float lightIntensityInBlondels;
+    float timeMS;
+};
+
+std::queue<LightTime> changesQueue;
+
 
 float getIntensityInLumens() {
     return Conversion::blondelToLumensSquareMillimeter(powf(10,lightIntensityInBlondels));
@@ -16,44 +31,43 @@ float evaluateDiameter() {
     	 
     return pupilDiameterInMM;
 }
-
-int main(int argc, char *argv[]) {
-
-    // Fill t<0 data. 
-    for (int i=0; i<10; i ++) {
+void readJSON()
+{
+    std::ifstream i("settings.json");
+    json j;
+    i >> j;
+    pupilDiameterInMM = j["startingValues"]["pupilDiameterInMM"];
+    lightIntensityInBlondels = j["startingValues"]["lightIntensityInBlondels"];
+    json queueArray = json::array();
+    queueArray = j["changesOfLight"];
+    for (auto& element : queueArray) 
+    {
+       changesQueue.emplace(LightTime(element["light"],element["timeMS"]));
+    }
+    
+    
+}
+int main(int argc, char *argv[]) 
+{
+    readJSON();
+    
+    
+    for (int i=0; i<20; i ++) {
  	 model.addPulse(timeInMilliseconds, getIntensityInLumens(), Conversion::diameterToArea(pupilDiameterInMM));
  	 timeInMilliseconds += 100;
     }
-
-    lightIntensityInBlondels = -2;
-    timeInMilliseconds=0;
-    for (int i=0; i<20; i ++) {	
-	    std::cout <<timeInMilliseconds<<" " 
-		      <<lightIntensityInBlondels<<" "
-		      << evaluateDiameter() << std::endl;
+    while(!changesQueue.empty())
+    {
+        LightTime element = changesQueue.front();
+        lightIntensityInBlondels = element.lightIntensityInBlondels;
+            for (int i=0; i<static_cast<int>(element.timeMS/10);i++) 
+            {	
+            std::cout <<  timeInMilliseconds <<" "
+            <<  lightIntensityInBlondels<<" "
+            <<  evaluateDiameter() << std::endl;
+            }
+            changesQueue.pop();
     }
 
-    lightIntensityInBlondels++;
-
-    for (int i=0; i<50; i ++) {	
-	    std::cout <<timeInMilliseconds<<" " 
-		      <<lightIntensityInBlondels<<" "
-		      << evaluateDiameter() << std::endl;
-    }
-    
-    lightIntensityInBlondels++;
-
-    for (int i=0; i<50; i ++) {	
-	    std::cout <<timeInMilliseconds<<" " 
-		      <<lightIntensityInBlondels<<" "
-		      << evaluateDiameter() << std::endl;
-    }
-    lightIntensityInBlondels+=-3;
-
-    for (int i=0; i<50; i ++) {	
-	    std::cout <<timeInMilliseconds<<" " 
-		      <<lightIntensityInBlondels<<" "
-		      << evaluateDiameter() << std::endl;
-    }
     return 0;
 }
