@@ -52,9 +52,9 @@ int main(int argc, char *argv[])
     readJSON();
     
     
-    for (int i=0; i<20; i ++) {
+    for (int i=0; i<1; i ++) {
  	 model.addPulse(timeInMilliseconds, getIntensityInLumens(), Conversion::diameterToArea(pupilDiameterInMM));
- 	 timeInMilliseconds += timeIntervalMS;
+ 	 timeInMilliseconds += 1;
     }
     while(!changesQueue.empty())
     {
