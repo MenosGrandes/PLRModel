@@ -1,0 +1,193 @@
+\documentclass[USenglish,twocolumn]{article}
+
+\usepackage[utf8]{inputenc}%(only for the pdftex engine)
+%\RequirePackage[no-math]{fontspec}%(only for the luatex or the xetex engine)
+\usepackage[big]{dgruyter}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+
+\begin{document}
+ 
+
+  \articletype{Research Article{\hfill}Open Access}
+
+  \author[1]{Piotr Napieralski}
+
+  \author[2]{Michał Kowalczyk}
+
+  \affil[1]{\mbox{Institute of Information Technology}, TUL, \mbox{e-mail: piotr.napieralski@p.lodz.pl}}
+
+  \affil[2]{\mbox{Institute of Information Technology}, TUL, \mbox{e-mail: 800893@edu.p.lodz.pl}}
+
+  \title{\huge Detection of vertical disparity in three-dimensional visualizations}
+
+  \runningtitle{Detection of vertical disparity in three-dimensional visualizations}
+
+  %\subtitle{...}
+
+  \begin{abstract} \indent This paper identifies the major types of artifacts occurring in three-dimensional materials. It focuses on the analysis of vertical disparity. The vertical disparity is the artifact of the 3D images that appears both in the film material and in the computer visualizations. The research explains the causes and consequences of the vertical disparity occurrence and presents the stable algorithm of detecting mentioned anomaly. The implementation of the developed method constitutes a complete solution enabling verification of stereoscopic material quality. The summary of the paper contains the evaluation of the algorithm in terms of correctness and stability.
+  \end{abstract}
+  \keywords{three-dimensional visualizations, vertical disparity detection, stereoscopic image quality}
+  
+  %\classification[PACS]{}
+  %\communicated{...}
+  %\dedication{...}
+
+  \journalname{Physics}
+
+  \DOI{DOI}
+  \startpage{1}
+  \received{..}
+  \revised{..}
+  \accepted{..}
+
+  \journalyear{2014}
+  \journalvolume{1}
+  \journalissue{11}
+
+\maketitle
+
+\section{Introduction}
+
+\indent Due to the intensive software development over the recent years, computer calculations have been becoming more and more advanced. Innovative applications used in Information Technology support actions from the scope of both: science and industry. Significant group of solutions used in most research fields is the set of the numerical modeling and visualization applications\cite{ref1}\cite{ref2}. Their primary function is to visually represent the processes taking place within different physical phenomena. Visualization techniques can influence the comprehension of obtained view. Use of stereoscopic methods dramatically increases the spectrum of visualization capabilities. It allows for a more accurate space representation and perception. Three-dimensional simulation and visualization techniques are also widely used in the film industry. There are more and more movies, that are realised in innovative techniques and are becoming the integral part of our lives, not only as pastime but also as a way of communication. As a result the film industry contributes to the entertainment, but also to science, industry, culture and economy. 
+\vfill\eject
+
+\indent Considering only the number of 3D screens, there are almost 90 thousands three-dimensional cinemas worldwide where millions of projections are shown every day. Such a big infrastructure created many opportunities for the industry, but on the other hand innovative technologies made cinematography completely dependent on the computer applications aiding the process of making a movie. In the case of the three-dimensional techniques one of the most crucial issue is the quality of the synthesized stereoscopic view\cite{ref4}. The forementioned problem is analogous in both,  visualization applications as well as in the case of movie. In this context, it is significant to detect all view defects at the stage of material production in order to provide correct final product. Omission or negligence of step may very likely result in release of a flawed material, which causes visual discomfort or other complaints. Detecting the defects enables making corrections and providing correct interpretation of the analyzed data. The process of reference 3D image quality analysis consists of the comparison of stereo views in order to identify artifacts in the stereo view.
+
+\section{Vertical Disparity}
+\indent The correctness of applied stereoscopic scene is the main factor conditioning the high quality of obtained view. The elementary implementation of this solution is based on the usage of two parallel cameras placed on the specialized trivet called RIG (fig. \ref{fig:rig}). It provides a portable and easy-to-set tool allowing to get three-dimensional visual data\cite{ref5}. Achieving an appropriate final view by using the cameras is determined by correct positioning and calibration of whole equipment. RIG constitutes a tool for control of the camera and provides a precise calibration device. It is worth to mention that, despite above described solution, the proper setting of cameras is still a non-trivial issue. Moreover, the initial calibration of the RIG does not guarantee the correctness during the whole shooting. It is particularly noticeable in the case of difficult weather conditions during the shooting. 
+
+\begin{figure}[ht!]
+\centering
+  \includegraphics[width=0.48\textwidth]{img/rig}
+\caption{Parallel RIG equipped with two cameras}
+\label{fig:rig}
+\end{figure}
+
+\indent Anomalies in the calibration not only lower the quality of the final product by causing a variety of image dysfunctions\cite{ref6}, but even worse, may be the source of the user’s health problems. There are many different kinds of scene implementation anomalies with various reasons and effects. The major artifacts observed in three-dimensional materials are anomalies of stereo views rotation, zoom and vertical disparity.
+
+\indent Vertical disparity is one of the most common, and exceptionally inexpedient defects from the scope of scene implementation. The phenomenon occurs in a three-dimensional images. The vertical displacement of cameras or convergence point decalibration is the source of the problem. The incorrect localization and calibration of the cameras is the reason why the objects from the left and from the right view of the stereo pair are shifted with one another (fig. \ref{fig:vertical_disparity}). The incorrect mutual translation between objects of the stereo pair is the direct root of the image defects\cite{ref7}. 
+
+\begin{figure}[ht!]
+\centering
+  \includegraphics[width=0.48\textwidth]{img/vertical_disparity}
+\caption{Vertical disparity model with a value of h for the stereo view}
+\label{fig:vertical_disparity}
+\end{figure}
+
+\indent The desirable value of the above mentioned displacement is zero. It means that the image is correct with regard to the disparity issue. If the value does not equals zero ($h$), the image contains the disparity error. User may properly interpret the three-dimensional visualizations only if the objects from their stereo pair have no vertical displacement. Occurrence of this artifact precludes proper image receiving. The defect has a negative impact on the product quality, but also may results in serious health consequences in the case of longer exposure of  the viewer to the discussed anomaly. The only way to avoid such problems is to conduct precise tests of 3D visualizations in order to detect visual artifacts, especially the vertical disparity. Defects connected with the occurrence of the disparity have to be entirely eliminated before releasing the product.
+
+\section{Vertical Disparity Detection Method}
+\indent The quintessential task of the vertical disparity detection algorithm is calculating the translation vector between stereo views. The first step to realize the method is to determine the proper correspondence between objects of the stereo pair. This process is run by mutual matching of characteristic areas of stereo views. The determined matches are the base to calculate vertical displacement between the objects within the three-dimensional image\cite{ref8}.
+
+\indent Nowadays on the market, there is a wide variety of methods which enables finding a correlation of the stereo pair. Nevertheless, it is still a serious problem to apply them in HD image. The substantial impediment is the operation time. Precise and detailed processing of the high resolution 3D images requires too much time. Such a time-consuming method can not be applied in real time applications because they require immediate calculations and results. It implies the necessity to optimize the calculation time without lowering the high quality. Fulfilling both conditions is a major issue in the subject area. The calculation cost may be lowered by using the method of partial image analysis. The algorithm, instead of using whole images, compares only the most representative subset of image’s pixels.  
+
+\indent The binary patterns matching method is the solution enabling to lower the calculation costs by working on the image’s pixels subset. With this the method the matches between two images can be found. It is used with regard stereo views in particular. Knowing the correlation between pixels in stereo pair it is possible to mark out the local vertical disparity values. The displacement is calculated in the Y coordinates of corresponding images\cite{ref9}. The calculated result equals the value of the local vertical disparity. The method of binary patterns matching processes only the chosen, representative pixels. As a result the amount of processed data is much smaller than in the case of considering on all pixels of the image and therefore it is possible to save much calculation time. Unfortunately this method entails also the risk of incorrect matching. The inaccuracy in generated correlations is associated with processing the single pixels, which, unlike when using the whole images, may cause incorrect points matching within the stereo pair. The pixels of different objects may be very similar to each other in their numerical space, even though they represent something completely various. If they are recognized as the corresponding ones,the inappropriate matching occurs(fig. \ref{fig:basic}), The error makes it impossible to run correctly further stages of the calculations, blocking the process of detecting the value of vertical disparity.
+
+\begin{figure}[ht!]
+\centering
+  \includegraphics[width=0.48\textwidth]{img/basic}
+\caption{The result of regular stereo views matching process}
+\label{fig:basic}
+\end{figure}
+
+\indent The larger the image, the bigger the risk of finding an incorrect correlation. Also having the repetitive patterns in the image enlarge significantly the probability of incorrect match. To avoid the negative consequences of the error, filtering mechanism has to be applied. The solution enlarges the correctness of the binary pattern matching process, but it does not eliminate all problems. If the patterns in a stereo pair are repeated too many times, the filtering mechanism may not be enough, what finaly equals receiving factually incorrect results\cite{ref10}.
+
+\section{Improved Algorithm of Disparity Detection}
+\indent To dispose entirely of the above mentioned error, it is necessary to redefine the view processing area. Dividing the image into smaller subimages enables mitigating the risk of repeating similar pixels in the processed area. With this method it is possible to receive only correct matches\cite{ref11}.
+
+\indent The sliding window mechanism is a tool enabling division of stereo pair into subimages. The obtained, splitted segments correspond to each other in  the framework of the primary stereo view. The process of division utilizes a rectangular, equal-sized window, which sets the boundaries of the processed area, so that the pixels from the outside of the border are not taken into account. The window moves across the surface of the stereo pair marking out consecutive subimages. Moreover, it guarantees that every region is taken under consideration only once, without needless repeated calculations in the already processed fragment. It allows to save time and make the method a robust and optimalized tool. 
+
+\begin{figure}[ht!]
+\centering
+  \includegraphics[width=0.48\textwidth]{img/sliding_window}
+\caption{The result of sliding window stereo views matching process}
+\label{fig:sliding_window}
+\end{figure}
+
+\indent The subimages from the corresponding sliding windows from the left and from the right view are compared utilizing the binary patterns matching algorithm to find the matches belonging to the processed area. From all matches marked out in the framework of a single subimage pair, only the best matches are chosen. Not only one match (as in the previous version of the algorithm), but several best matches are used. This means selecting a set of matches that fulfill the condition of minimum vectorial distance between the feature vectors representing the pixels of the right and left views, respectively. This modification makes it possible for more explicit image areas to have significant roles in estimating the correlation of stereo images The chosen matches are used in further steps of disparity estimation process. The solution improves the correctness of final results (fig. \ref{fig:sliding_window}). The way of estimating the value of local vertical disparity does not differ from calculating the disparity in the case of the basic algorithm - it means marking out the displacement value in the Y coordinates of matched pixels. After all pairs of subimages are processed according to the described algorithm, the stereo pair analysis may be considered as a completed one. The mean of obtained in this way values of local disparities (alg. 1) equals the global stereo view disparity value.
+
+\begin{algorithm}
+\caption*{\textbf{Alg. 1} Pseudocode of the sliding window disparity detection algorithm}
+\label{algorithm:pseudocode}
+\begin{algorithmic}%[1]
+\State{$SW_W$ SlidingWindowWidth\\
+$SW_H$ SlidingWindowHeight\\
+$V_L$ LeftStereoscopicView, $V_R$ RightStereoscopicView\\
+$S_L$ LeftSubimage, $S_R$ RightSubimage\\
+
+$K_L$ LeftKeypoints, $K_R$ RightKeypoints\\
+$D_L$ LeftDescriptors, $D_R$ RightDescriptors\\ 
+$M_{LR}$ LeftToRightMatches, $M_{RL}$ RightToLeftMatches\\
+$M_F$ FilteredMatches, $M_B$ BestHammingMetricMatches\\ 
+$D_V$ LocalVerticalDisparities}
+\State{}
+\State{$K_L=FAST(V_L)$}
+\State{$K_R=FAST(V_R)$}
+\State{$D_L=BRIEF(V_L,K_L)$}
+\State{$D_R=BRIEF(V_R,K_R)$}
+\State{$M_{LR}=BruteForceHamming(D_L,D_R)$}
+\State{$M_{RL}=BruteForceHamming(D_R,D_L)$}
+\State{$M_F=M_{LR}\bigcap M_{RL}$}
+\State{}
+\For {each $f \in M_F$}
+  \State{$D_V.add(f.leftKeypoint.y-f.rightKeypoint.y)$} 
+  \State{$D_H.add(f.leftKeypoint.x-f.rightKeypoint.x)$} 
+\EndFor\\
+\State{}
+\Return {$D_V$, $D_H$}
+\end{algorithmic}
+\end{algorithm}
+
+Provided that the sliding window mechanism has correctly estimated parameters, the described algorithm enables elimination the problem occurring in the binary patterns matching process. 
+
+\section{Tests}
+\indent Conducting tests is a crucial step in the process of specifying the parameters and detecting faults in the developed method. There are two possible ways of assessing the improvement of the algorithm: comparing basic and modified implementations, or considering only the metadata of a testing set. To obtain as solid and complete results as possible, the Middlebury Stereo Dataset\cite{ref14} was used in the testing process of the primary implementation of the disparity detection algorithm. Middlebury Stereo Dataset is a set of three-dimensional images and metadata i.e. the stereo pairs parameters including the vertical disparity. 
+
+\indent The tests have been carried out for a couple of cases differing between each other in sliding window parameters. The above presented table shows the most significant results. 
+
+\begin{figure}[H]
+\centering
+  \includegraphics{img/results}
+\caption{Results of the  testing process calculated for the elements of Middlebury Stereo Dataset. A) image size: width[px] x height[px]; B) sliding window size: percentage of image width[\%] x percentage of image height[\%]; C) basic method matches amount; D) developed method matches amount; E) Middlebury metadata vertical disparity value[px]; F) basic method vertical disparity value[px]; G) developed method vertical disparity value[px]}  
+\label{fig:results}
+\end{figure}
+
+\indent Considering the data contained in the chart, appears the conclusion, that the propounded improvement of the binary patterns matching mechanism makes the process of calculating the vertical disparity much more efficient and precise. The changes are evidently visible especially in the comparison of columns E, F, G. The values from the G column are approximate to the values from the E column, unlike the values from column F, where the corresponding numbers differ from each other much more. The more similar the values are to each other, the more accurate and correct results are received in the process of estimating the vertical disparity. It means that the obtained values of displacement are not the effect of algorithm error, but they nearly equal to the ground truth values. The main condition for the satisfying work of the mechanism is the proper calibration of sliding window parameters (shown in the column B). To avoid the problem of differences in the views from the corresponding stereo subimages, the width of a sliding window has to be estimated at 20\% of a stereo image (it is conditioned by the fact that the same objects have to occur in both subimages, what arises from the basic rules of stereoscopy). The height of a sliding window was tested in the cases ranging from 1 to 100\% of a stereo pair height. The tests indicated that the more reduced height of the sliding window, the more accurate and satisfying results, but on the other hand the height should not go down under the 5\% of a height of the stereopair. It is caused by the fact that if the value of vertical disparity is bigger than the height of the sliding window, some objects contained in one analysed subimage, may not occur in the corresponding one. Such situation does not allow to carry out correct calculations. To avoid it, it is crucial to provide a sliding window, which is higher than the value of vertical disparity in the analysed material. In the three-dimensional scenes the vertical disparity, which values are above 10\%, is visible to the naked eye and do not require any additional ways of evaluation. Taking under consideration all the above mentioned conditions, it is best  to use a sliding window, which dimensions are ranging between 20\%x10\% and 20\%x5\% of an analyzed image. 
+
+\indent Encapsulating the tests process, one more improvement should be highlighted. The modified algorithm requires significantly smaller amount of matches to calculate the vertical disparity value than the basic one, which is visible in the comparison of columns C and D. Due to it, it is possible to reduce the amount of data to analyse and therefore to save calculation time and optimize the process. To sum up, taking all the above mentioned conclusions under consideration, it is clear that the developed algorithm is a much better tool than the basic version of it.
+
+\indent It is worth to mention, that the proposed method is tested during three-dimensional movie shooting (fig. \ref{fig:frame}) to evaluate stereoscopic image quality and properly calibrate the camera set. This makes it possible to evaluate the developed algorithm in real conditions and continuously work on its improvement.
+
+\begin{figure}[ht!]
+\centering
+  \includegraphics[width=0.48\textwidth]{img/frame}
+\caption{Video frame from a three-dimensional movie shooting}
+\label{fig:frame}
+\end{figure}
+
+\section{Conclusions}
+\indent The presented method of improving the algorithm involves both the issue of correctness and the question of processing time and optimizing it. Due to the usage of the sliding window mechanism it is possible to minimize the problem of finding incorrect correlations in the binary patterns matching process. At the same time the method of qualifying only the best matches to further calculations enables to accelerate the operations. As a result,  the robust and precise vertical disparity detection algorithm is obtained. It is successfully utilised in the film industry in the Cinema Vision Projekt so that the produced movies are released in better quality\cite{ref15}. What is important, it provides certainty to producers, that their product will not cause any health problems to the users.
+
+\indent Depending on the parameters, the developed algorithm may be used in the case of any three dimensional material, not only commercial movies, but also in visualizations. It makes it a very universal tool to detect and estimate the vertical disparity.
+
+\begin{thebibliography}{99}
+\bibitem{ref1} S. Wiak, K. Smolka, M. Dems, K. Komeza, “Numerical (solid) modeling of 3-D intelligent comb drive accelerometer structure - Mechanical problems”, Przeglad Elektrotechniczny 82:68-71, 2006
+\bibitem{ref2} S. Wiak, P.Napieralski “Visualization Method Of Magnetic Fields With Dynamic Particle Systems”,  Przeglad Elektrotechniczny 7b:56-59, 2012
+\bibitem{ref4} K. Seshadrinathan, R. Soundararajan, A. Bovik, L. Cormack, “Study of Subjective and Objective Quality Assessment of Video”, IEEE Transactions on Image Processing, IEEE, 2010
+\bibitem{ref5} A. Woods T. Docherty R. Koch, "Image Distortions in Stereoscopic Video Systems", Stereoscopic Displays and Applications, Proceedings of the SPIE, 1993, pp. 36-49
+\bibitem{ref6} A. Voronov, D. Vatolin, D. Sumin, V. Napadovsky, A. Borisov, “Methodology for stereoscopic motion-picture quality assessment”, Stereoscopic Displays and Applications, 2013
+\bibitem{ref7} M.Lambooij, W. IJsselsteijn, M. Fortuin, I. Heynderickx, "Visual discomfort and visual fatigue in stereoscopic displays : a review”, Journal of Imaging Science and Technology, Society for Imaging Science and Technology, 2009
+\bibitem{ref8}N. Lazaros, G. Sirakoulis, A. Gasteratos,“Review of stereo vision algorithms: from software to hardware”, International Journal of Optomechatronics, Taylor \& Francis Group, 2008, pp. 435-462
+\bibitem{ref9} M, Kowalczyk, K. Fornalczyk, P. Napieralski, R. Staniucha, “Disparity detection in three-dimensional scenes implementing virtual reality”, Computer game innovations, Lodz University of Technology Monograph, 2016,  pp. 35-42
+\bibitem{ref10} M. Kowalczyk and P. Napieralski, "Noise resistant method enabling detection of vertical disparity in three-dimensional visualizations," 2017 18th International Symposium on Electromagnetic Fields in Mechatronics, Electrical and Electronic Engineering (ISEF) Book of Abstracts, Lodz, Poland, 2017
+\bibitem{ref11} M. Kowalczyk, P. Napieralski, “An Effective Client-Side Object Detection Method on the Android Platform”, Journal of Applied Computer Science, Technical University Press Łódź, No. 2, 2015, pp. 29-38
+\bibitem{ref12} E. Rosten, T. Drummond, “Machine learning for high-speed corner detection”, Computer Vision-ECCV 2006, Springer, 2006, pp. 430-443
+\bibitem{ref13} M. Calonder, V. Lepetit, C. Strecha, P. Fua, “BRIEF: Binary Robust Independent Elementary Features”, Computer Vision – ECCV 2010, Springer, 2010, pp. 778-792
+\bibitem{ref14} \url{http://vision.middlebury.edu/stereo/data/}
+\bibitem{ref15} A. Rogalska and P. Napieralski, "A model of saliency-based visual attention for movie retrospection," 2017 18th International Symposium on Electromagnetic Fields in Mechatronics, Electrical and Electronic Engineering (ISEF) Book of Abstracts, Lodz, Poland, 2017
+\end{thebibliography}
+
+\end{document}
+
+\end{document}
