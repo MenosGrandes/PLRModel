@@ -20,6 +20,7 @@
 #define UTIL_H_
 #include <time.h>
 #include <cmath>
+#include <cctype>
 float totalTime;
 
 double EPSLON = 1.0E-4;
@@ -41,11 +42,11 @@ inline bool zero(double a) {
 }
 
 int upperCase(int c) {
-	return _toupper(c);
+	return toupper(c);
 }
 
 int lowerCase(int c) {
-	return _tolower(c);
+	return tolower(c);
 }
 
 double degToRad(double degree) {

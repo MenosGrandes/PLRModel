@@ -31,9 +31,9 @@ float evaluateDiameter() {
     	 
     return pupilDiameterInMM;
 }
-void readJSON()
+void readJSON(const std::string filename)
 {
-    std::ifstream i("settings/settings.json");
+    std::ifstream i(filename);
     json j;
     i >> j;
     pupilDiameterInMM = j["startingValues"]["pupilDiameterInMM"];
@@ -49,7 +49,7 @@ void readJSON()
 }
 int main(int argc, char *argv[]) 
 {
-    readJSON();
+    readJSON("settings/settings.json");
     
     
     for (int i=0; i<1; i ++) {
