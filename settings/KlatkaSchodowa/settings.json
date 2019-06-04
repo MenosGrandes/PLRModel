@@ -1,0 +1,25 @@
+{
+    "startingValues": 
+    {
+        "pupilDiameterInMM": 7.3,
+        "lightIntensityInBlondels":5.356,
+        "timeIntervalMS": 100
+    },
+    "changesOfLight":
+    [
+    {"light":0.432,"timeMS":30},
+	{"light":4.432,"timeMS":21},
+	{"light":-0.432,"timeMS":15},
+	{"light":-0.232,"timeMS":26},
+	{"light":-1.232,"timeMS":5},
+	{"light":-4.232,"timeMS":12},
+	{"light":-6.232,"timeMS":6},
+	{"light":-2.232,"timeMS":22},
+	{"light":-8.232,"timeMS":46},
+	{"light":-3.232,"timeMS":17},
+	{"light":-11.232,"timeMS":12},
+
+    {"light":-10.432,"timeMS":30}
+
+    ]
+}

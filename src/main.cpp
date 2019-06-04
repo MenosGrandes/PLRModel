@@ -35,7 +35,18 @@ void readJSON(const std::string filename)
 {
     std::ifstream i(filename);
     json j;
+	try
+	{
     i >> j;
+	}
+	catch(json::parse_error&e)
+	{
+	// output exception information
+	std::cout << "message: " << e.what() << '\n'
+	<< "exception id: " << e.id << '\n'
+	<< "byte position of error: " << e.byte << std::endl;
+	return ;
+	}
     pupilDiameterInMM = j["startingValues"]["pupilDiameterInMM"];
     lightIntensityInBlondels = j["startingValues"]["lightIntensityInBlondels"];
     timeIntervalMS = j["startingValues"]["timeIntervalMS"];
