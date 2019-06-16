@@ -1,3 +1,5 @@
+#ini files
+*.ini
 # Prerequisites
 *.d
 
