@@ -67,7 +67,7 @@
 
 \section{Introduction}
 
-\indent The human eye is a complex biological structure, sensitive to light and pressure. Thanks to its structure, this  organ provides one of the most important senses for humans, which is vision. For million years of evolution, the mammal eye has been able to differentiate between about 10 million colors and it is possibly capable of detecting a single photon. For the purpose of this research, the anatomy of the human has been simplified (see \Ref{fig}{fig:anatomy}).
+\indent The human eye is a complex biological structure, sensitive to light and pressure. Thanks to its structure, this  organ provides one of the most important senses for humans, which is vision. For million years of evolution, the mammal eye has been able to differentiate between about 10 million colors and it is possibly capable of detecting a single photon. For the purpose of this research, the anatomy of the eye human has been simplified (see \Ref{fig}{fig:anatomy}).
 
 \begin{figure}[ht!]
 	\centering
@@ -75,17 +75,23 @@
 	\caption{Anatomy of human eye \textit{https://goo.gl/k5qap4}}
 	\label{fig:anatomy}
 \end{figure}
-\indent Light passes through the cornea, the pupil and the lens to finally fall on the light-sensitive cells of the retina. When the amount of light coming through the iris exceeds normal requisition, or there is shortage of light for the eye to perform normal vision, the iris sphincter muscle and iris dilator muscle react, creating what is known as the \textit{pupillary light reflex}. The first muscle constricts the pupil when light is too bright, while the other expands it in poor light conditions. In a heightened sympathetic activity, these muscles can follow the same response pattern as in the case of various light conditions. The varying size of the pupil is a physiological response to many external factors (the pupillary response). The change in pupil size can be prompted by an involuntary reflex reaction to light (exposure to light) \cite{Saladin}. An increase in the size of the pupil of the eye has been found to accompany interest understood in the context of attention, and even sexual arousal \cite{Hess} \cite{Hammerer}. Other factors are memory operations \cite{Bradley} or a cognitive effort to distinguish between automated and controlled cognitive processing \cite{Querino} \cite{Staniucha} In normal light conditions, the pupil the pupil diameter is around 3.09mm, and 4.93mm for darkness \cite{Wyatt}. In \Ref{fig}{fig:dilatation}, the effect of bright light and dim light is presented. As far as the latency of the light reflex, the shortest one was recorded in \cite{Ellis} and it was 220 ms. Some algorithms to create a virtual pupil \cite{Walraven} can be found in the literature, which can be used to conduct experiments without the need for human subjects.
+\indent Light passes through the cornea, the pupil and the lens to finally fall on the light-sensitive cells of the retina. When the amount of light coming through the iris exceeds the normal requisition, or there is a shortage of light for the eye to achieve normal vision, the \textbf{iris sphincter muscle}and \textbf{iris dilator muscle} react, creating what is known as the \textit{pupillary light reflex}. The first muscle constricts the pupil when light is too bright, while the other expands it in poor light conditions. In a heightened sympathetic activity, these muscles can follow the same response pattern as in the case of various light conditions. The varying size of the pupil is a physiological response to many external factors (the pupillary response). The change in pupil size can be prompted by an involuntary reflex reaction to light (exposure to light) \cite{Saladin}. An increase in the size of the pupil of the eye has been found to accompany interest understood in the context of attention, and even sexual arousal \cite{Hess} \cite{Hammerer}. Other factors are memory operations \cite{Bradley} or a cognitive effort to distinguish between automated and controlled cognitive processing \cite{Querino} \cite{Staniucha} In normal light conditions, the pupil the pupil diameter is around 3.09mm, and 4.93mm for darkness \cite{Wyatt}. In \Ref{fig}{fig:dilatation}, the effect of bright light and dim light is presented. As far as the latency of the light reflex, the shortest one was recorded in \cite{Ellis} and it was 220 ms. Some algorithms aiming to create a virtual pupil \cite{Walraven} can be found in the literature, which can be used to conduct experiments without the need for human subjects.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.48\textwidth]{img/dilatation.png}
 	\caption{Pupil dilatation based on given light \cite{Walker}}
 	\label{fig:dilatation}
 \end{figure}
-The pupillary light reflex is modeled as a physiologically-based non-linear delay differential equation. Models of pupil changes under the influence of light may allow to separate factors related to the emotional state of the human study subject from the rate of these emotional cues. We propose to collect information about pupil dilation and then decouple the pupillary light reflex from this data. It is important to know the behavior of the eye due to changes in the light environment. Currently, studies on emotional states based on pupil size are performed in isolated laboratory environments. Accordingly, knowing and modeling pupil changes based on light conditions will allow us to isolate these changes.
- \section{Methods}
- \indent Most models so far have been developed against the background of empirical research. Statistical models show changes in pupil size due to light reaching the eye. Based on \cite{Watson}, the entire equation was transformed to use \textbf{nit}(${cd}/{m^{-2}}$) as the main unit of luminance. The literature describes several models built around experiments designed to measure the values of some parameters as a function of incident light intensity \cite{Pamplona}. Calculation of pupil size based on given illumination can be performed using multiple formulas. 
- \\ \indent The first study aimed at extrapolating pupil size based on given luminance was conducted by Holladay \cite{Holladay}. Data was collected for 3 participants of unknown age and binocular viewing.
+The pupillary light reflex is modeled as a physiologically-based non-linear delay differential equation. 
+Subsequent pupillary measurements will be made with a different physiological index. It is observed that the pupil diameter changes each fixation cross location in the different emotional state \cite{Raiturkar}. The magnitude of the pupil is strongly correlated with visual attention and task performance \cite{Ebitz}. The numerical accuracy of different variants of integral image computation algorithms allow for the possibility of multiple evaluations of different statistical characteristics of the image \cite{Puchala} to extract the differences from different parameters of the pupil size. 
+The other solution is based on artificial neural networks \cite{Garbaa} \cite{Lipinski} used to predict the pupillary response and factor localization. 
+\cite{Raiturkar} propose a model based on the fact that the pupil’s response to brightness changes is linear and they try to cover the range of pupillary behavior. They assume that the response of the pupil, at each time instant, is independent of the previous light intensity that it was exposed to.
+Models of pupil changes under the influence of light may allow us to separate factors related to the emotional state of the human study subject from the rate of these emotional cues. We propose to collect information about pupil dilation and then decouple the pupillary light reflex from this data. It is important to know the behavior of the eye due to changes in the light environment. Currently, studies on emotional states based on pupil size are performed in isolated laboratory environments. Accordingly, knowing and modeling pupil changes based on light conditions will allow us to isolate these changes. To ensure the most accurate simulation of pupil behavior, we implemented and the most popular mathematical models of the pupillary light reflex
+ \section{Pupillary light reflex in equilibrium state}
+ The pupillary light reflex is the main mechanism that regulates the pupillary diameter. Most models so far have been developed against the background of empirical research. Data gathered in those experiment was obtained after the pupil reached the equilibrium state, when the pupil stabilized for each illumination level. Those models are not suitable for describing dynamic changes of the pupil, but are used as a base for some models of dynamic changes of the pupil. The literature describes several dynamic behavior models built around experiments designed to measure the values of some parameters as a function of incident light intensity \cite{Pamplona}, described in <add reference> .
+ Calculation of pupil size in am equilibrium state based on given illumination can be performed using multiple formulas, which are presented at below. 
+ Based on \cite{Watson}, the entire equation was transformed to use \textbf{nit}(${cd}/{m^{-2}}$) as the main unit of luminance. 
+ \\ \indent The first study was aimed at extrapolating pupil size based on given luminance was conducted by Holladay \cite{Holladay}. Data was collected for 3 participants of unknown age and binocular viewing.
  \begin{equation}
 	 D_{H}(L) = 7\exp(-0.1007L^{0.4})
 	 \label{equ:holladay}
@@ -118,7 +124,7 @@ The pupillary light reflex is modeled as a physiologically-based non-linear dela
 	\caption{Pupil size for \protect\Ref{equ}{equ:moonSpancer} of Moon and Spencer}
 	\label{fig:moonSpancer}
 \end{figure}
-De Groot and Gebhard \cite{de_Groot} formulated an equation based on the averaged data from previous works, taking in consideration the number of people examined in the experiment. As can be seen in \Ref{fig}{fig:groot}, the asymptote of 2mm is not present in this formula either. According to the authors, it is not necessarily demanded by the data of the physiological restrictions.
+De Groot and Gebhard \cite{de_Groot} formulated an equation based on the averaged data from previous work, taking into consideration the number of people examined in the experiment. As can be seen in \Ref{fig}{fig:groot}, the asymptote of 2mm is not present in this formula either. According to the authors, it is not necessarily demanded by the data of the physiological restrictions.
 
 \begin{equation}
    D_{DG}(L) = 7.175 \exp [-0.00092(7.597 + \log L)^{3}]
@@ -131,7 +137,7 @@ De Groot and Gebhard \cite{de_Groot} formulated an equation based on the average
 	\label{fig:groot}
 \end{figure}
 
-Important changes in formulas were introduced by Stanley and Davies \cite{Stanley}. In contrast to previous works which assumed that dilatation depend only on a given luminance, they went on to conclude, based on Crawford, that the pupil diameter is directly correlated with the product of luminance \textit{L} and the \textit{adapting field size}, expressed by a in $deq^2$, which gives \textit{corneal flux density}($cdm^-2 deq^2$). To arrive at this formula, data was gathered from 6 volunteers whose adapting field size ranged from 0.4\textdegree  to 25.4\textdegree. These two values were plotted at \Ref{fig}{fig:stanleyDavies} and used as thresholds for this experiment.
+Important changes in the formulas were introduced by Stanley and Davies \cite{Stanley}. In contrast to previous work which assumed that dilatation depend only on a given luminance, they went on to conclude, based on Crawford, that the pupil diameter is directly correlated with the product of luminance \textit{L} and the \textit{adapting field size}, expressed by a in $deq^2$, which gives \textit{corneal flux density}($cdm^-2 deq^2$). To arrive at this formula, data was gathered from 6 volunteers whose adapting field size ranged from 0.4\textdegree  to 25.4\textdegree. These two values were plotted at \Ref{fig}{fig:stanleyDavies} and used as thresholds for this experiment.
 \begin{equation}
 	D_{SD}(L, a) = 7.75 - 5.759 \frac{(La/846)^{0.41}}{(La/846)^{0.41} + 2}
 	\label{equ:stanleyDavies}
@@ -164,7 +170,7 @@ D_{BH}(L) = 5.697 -0.658 \log L - 0.07(\log L)^{2}
 	\caption{Pupil size for \protect\Ref{equ}{equ:blackieHowland} Blackie and Howland.}	
 	\label{fig:blackieHowland}
 \end{figure}
-\cite{Winn} Winn carried out an experiment for 91 subjects aged from 17 to 83, including students, staff and clinical population of Aston University. Subjects maintained steady fixation at the center of an evenly illuminated circular field with a 10\textdegree diameter. Pupil diameter was measured at five luminance levels (9, 44, 220, 1100, and 4400 $cdm^{-2}$ ). The mean pupil size of 91 subjects was plotted as a function of age for five different levels of luminance. Thanks to this data, the slope and intercept were estimated. These values are given in \Ref{tab}{tab:winn}.
+\cite{Winn} Winn carried out an experiment for 91 subjects aged from 17 to 83, including students, staff and the clinical population of Aston University. Subjects maintained a steady fixation at the center of an evenly illuminated circular field with a 10\textdegree diameter. Pupil diameter was measured at five luminance levels (9, 44, 220, 1100, and 4400 $cdm^{-2}$ ). The mean pupil size of 91 subjects was plotted as a function of age for five different levels of luminance. Thanks to this data, the slope and intercept were estimated. These values are given in \Ref{tab}{tab:winn}.
 \begin{table}[H]
 	\centering
 	\caption{Estimated slopes and intercept for Winn etc.}
@@ -178,7 +184,7 @@ D_{BH}(L) = 5.697 -0.658 \log L - 0.07(\log L)^{2}
 		4400&	-0.015&	4.07&	0.214 \\
 	\end{tabular}
 \end{table}
-Luminance was restricted to illumination in Winn et al.’s experiment. To use values from \Ref{tab}{tab:winn} in pupil prediction equation, the slope needs to be presented as a function of log luminance with a cubic polynomial (see \Ref{equ}{equ:winnPoly}). The same pattern was followed in the case of intercept (see  \Ref{equ}{equ:winnIntercept}).
+Luminance was restricted to illumination in Winn et al.’s experiment. To use values from \Ref{tab}{tab:winn} in pupil prediction equation, the slope needs to be presented as a function of log luminance with a cubic polynomial (see \Ref{equ}{equ:winnPoly}). The same pattern was followed in the case of the intercept (see  \Ref{equ}{equ:winnIntercept}).
 \noindent
 \begin{equation}
 \label{equ:winnPoly}
@@ -213,9 +219,9 @@ where $y$ denotes the age of a participant.
 	\label{fig:winn}
 \end{figure}
 
-Wattson and Yellot \cite{Watson} created unified formula, which combine previously described equation and in addition giving into consideration new parameters.
+Wattson and Yellot \cite{Watson} created unified formula, which combines the previously described equation as well as considering new parameters.
 
-Taken in account previously conducted experiments in which only dilatation of one eye was measured where the result differs from the experiments with both, given in the same adapting light (as in the \Ref{fig}{fig:bin_mon}), the monocular effect was created. Based on comparison of mono and binocular data the conclusion was that the modeling of the monocular effect can be superimposed by a horizontal shift on a log axis. In which the average optimal shift of monocular data to match binocular data amounted 0.1015. With this information the factor of 0.1 can be used to shift data when in experiment only one eye is examined, and 1 when the data is collected on binocular (\Ref{equ}{equ:WattsonYellot_Bin})
+Taking into account previously conducted experiments in which only the dilatation of one eye was measured where the result differs from the experiments with both, given in the same adapting light (as in the \Ref{fig}{fig:bin_mon}), the monocular effect was created. Based on a comparison of mono and binocular data the conclusion was that the modeling of the monocular effect can be superimposed by a horizontal shift on a log axis. In which the average optimal shift of monocular data to match binocular data amounted to 0.1015. With this information, a the factor of 0.1 can be used to shift data when in an experiment only one eye is examined, and 1 when the data is collected on the binocular (\Ref{equ}{equ:WattsonYellot_Bin})
 \begin{equation}
 \label{equ:WattsonYellot_Bin}
 \begin{split}
@@ -262,32 +268,38 @@ Age must be in the range of that of the subjects in Winn et al. Reference age is
 	\label{fig:wattsonYellot_2}
 \end{figure}
 \Ref{fig}{fig:wattsonYellot_1} and~\ref{fig:wattsonYellot_2} show all the described methods and they demonstrate that these methods can differ depending on the parameters. \Ref{fig}{fig:wattsonYellot_1} presents monocular e=2 data from a small adapting area a=10. It can be seen that the Unified formula, based on Stanley and Davies, gives similar results to the Barten formula. Meanwhile In \Ref{fig}{fig:wattsonYellot_2}, it can be observed that the Unified, Barten, Stanley Davies and Moon-Spencer formulas give similar results, which shows that the Watson and Yellot model can be used to predict pupil size more precisely than previous models
-\section{Research environment}
-In order to record pupil changes caused by either the internal or external factors, device called eye-tracker can be used. Main task of those devices is to track and record gaze, but in addition others vital oculography parameters can be recorded. Blink occurrence frequency, saccades detection and real time pupil size monitoring, are the most common ones. In order to record those changes multiple, either infra red or RGB, cameras must be used. Arrangement of those camera can be used to distinguish two main types of eye trackers. 
+\section{Dynamic model of pupillary light reflex}
+As described in previous chapter, models only give information about pupil size after adaptation to a given light luminosity. Meaning that it does not describe changes of the pupil in a time interval. This poses a significant problem in research which includes constant changes of light or in monitoring the changes on psychological impulses. Models of such changes need to take into consideration the specific physiological behavior of the pupil.
+In the case of PLR, iridial reaction is caused by light striking through the retina. This action sends a neural signal, but it needs time to cause the iridial reaction, which is why it is modelled by a time delayed equation. Another parameter that affects the pupil change is the threshold value of light flux. Luminosity higher than that given threshold will not cause the pupil to react. 
+As the final visual effect of PLR is the movement of dilator and sphincter muscles, there are PLR models that are designed to simulate behavior of those muscles based on autonomic nervous system input. In \cite{Fan} the model is targeted to simulate only short light flashes, which does not cover all possible cases of PLR behavior. The model presented at \cite{Suaste-Gomez} is over complicated with multiple second-order delay differential equations, and thus it is impractical for designing a robust inverse algorithm to obtain model parameters from experimental data.
+The model used in this experiment is based on the Moon and Spencer equation\ref{equ:moonSpancer}, for equilibrium pupil state, and Longtin and Milton’s time dependent pupil size which is described by a time delayed equation. The \Ref{equ}{equ:Pampelona} describes the behavior of dynamic changes of the pupil in response to light where the pupillary latency – the time delay between the instant in which the light pulse reaches the retina and the beginning of iridial reaction – is given by $\tau$ and time \textit{t}. Parameter \textit{D} describes the pupil diameter in millimeters, which is the output of the solved equation.  
+This model is able to describe changes of the individual pupil in specific light conditions. Despite the fact that Pamplona is based on Moon and Spencer’s function and not the newest Wattson and Yellot, the literature shows that this method gives very high correlation with real life scenarios.
 
-Head-mounted eye trackers, mostly in glasses shape, have multiple cameras aimed directly onto subject eyes, and one so called global to record scene in front of the subject.  The greatest advantage of these devices is their mobility, which allows subject to move freely and change locations. The biggest disadvantage is that they have lower precision and accuracy compared with stationary one, because of the subject head movement.
+\begin{equation}
+\label{equ:Pampelona}
+\frac { d M } { d D } \frac { d D } { d t } + 2.3026 \operatorname { atanh } \left( \frac { D - 4.9 } { 3 } \right) = 5.2 - 0.45 \ln \left[ \frac { \phi ( t - \tau ) } { \overline { \phi } } \right]
+\end{equation}
 
-Second type of eye-trackers are so called remote-eye trackers. A non intrusive peripheral device that have no contact with human body. Cameras that are placed inside this device are aimed in front of the scene, where the face of subject must be present. Those are stationary devices with no possibility to change its location, thus the test must take place in same area. The biggest advantage over wearable eye tracker is that this kind of eye tracker is non intrusive, which is more suitable to study psychological reflexes. Thus, the device is calibrated in the way that has certain window where the eye of the subject must be visible and there are no head movement of subject the accuracy is higher in compare with wearable one.
+\section{Description of the research environment}
+In order to record pupil changes caused by either internal or external factors, a device called an eye-tracker can be used. The main task of this device is to track and record gaze, but in addition, vital oculography parameters can be recorded. Blink occurrence frequency, saccades detection and real time pupil size monitoring, are the most common ones. In order to record those changes multiple cameras, either InfraRed or RGB, must be used. The arrangement of those cameras can be used to distinguish two main types of eye trackers. 
 
-Taking into consideration that experiment is aimed to real life scenarios like shopping, walking in the street, or event sport activity, the most important property of the device must be its mobility. Based on other researchers and solutions available in market the wearable eye tracker was chosen to this experiment. Second attribute of the device must be possibility to develop and implement new algorithms of measuring pupil changes in time. There are multiple DYI wearable eye-trackers, but they lack of precision and accuracy in comparison to solution provided in commercial solutions. Based on available devices, Tobii Pro Glasses 2 and Pupil Lab, were tested to check their accuracy and precision. Conclusion of preliminary conducted experiment was that Tobii
+Head-mounted eye trackers, mostly in the shape of glasses, have multiple cameras aimed directly onto the subject’s eyes, and one so-called global camera to record the scene in front of the subject.  The greatest advantage of these devices is their mobility, which allows the subject to move their head freely and change locations. The biggest disadvantage is that they have lower precision and accuracy compared with stationary ones, because of the subject’s head movement.
 
-Pro Glasses 2 have slightly better results than another device. Lack of possibility to extend capabilities of Tobii by adding new algorithms or another peripheral device caused that the Pupil Lab have been chosen.
+The second type of eye-trackers are so-called remote-eye trackers. This is a nonintrusive peripheral device that has no contact with human body. Cameras that are placed inside this device are aimed in front of the scene, where the face of subject must be present. These are stationary devices with no possibility of changing its location, thus the test must take place in same area. The biggest advantage over the wearable eye tracker is that this kind of eye tracker is nonintrusive, which is more suitable to study psychological reflexes. Thus, the device is calibrated in a way that has a certain window where the eye of the subject must be visible and there is no head movement of subject. Accuracy is higher in comparison with a wearable one.
 
-This device is capable of gaze estimation with 0.6 degree of visual angle (0.08 degree precision) with a processing pipeline latency of only 0.045 seconds, blink detection, pupil size monitoring and more. The glasses-like headset eye tracker, presented at Figure 14, consist of two RGB camera with IR filter and one global directed RGB camera at the front of the user. Frontal camera is able to capture image at max resolution of 1920x1080 pixels at 30Hz with 90-degree diagonal field of view. Two IR cameras, which can operate up to 200Hz, are located at glasses frames and aimed directly to eyes of the subject. 
-Software used in Pupil Lab uses “dark pupil” detection method thus IR cameras must be able to capture video at specific range of IR spectrum, in this device it is 860nm wavelength.  Each image captured by the IR camera is analyzed by open source Pupil Lab software. Thanks to flexibility and extensibility of source code additional sensors can be added to this eye tracker. Additionally, in case of this research, to eye tracer simple luxometer was added as external sensor.  
-The BH1603FVC Rohm analog current output ambient light sensor was used to determinate amount of light casted at pupil. It is device with compacted surface of 3.0 x 1.6 mm and spectral sensitivity close to human eye sensitivity.  Sensor is capable of measuring ambient light in range of 0 - 1 000 lux on H-Gain Mode, 0 – 10 000 in M-Gain and 0 – 100 000 on L-Gain.  To measure which range will be most suitable for conducted experiment the sensor was placed with 50cm range from LED lamp. This experiment gave values from 6 000 to 9 000lux , which contains in H-Gain range of sensor and in that mode sensor was calibrated. This sensor was placed near IR camera of left eye, and only this eye responses are recorder during the experiment.
+Taking into consideration that experiment is aimed at real life scenarios like shopping, walking in the street, or sport event activity, the most important property of the device must be its mobility. Based on other research and solutions available on the market, the wearable eye tracker was chosen for this experiment. The second attribute of the device must be the possibility to develop and implement new algorithms for measuring pupil changes over time. There are multiple DYI wearable eye-trackers, but they lack precision and accuracy in comparison to devices provided by commercial solutions. Based on devices available for our use, the Tobii Pro Glasses 2, and Pupil Lab \Ref{fig}{fig:pupilLab_e}, both were tested in accuracy and precision. The conclusion of the preliminary conducted experiment was that the Tobii Pro Glasses 2 have slightly better results than the other device. The lack of possibility to extend usage of Tobii by adding new algorithms or another peripheral device resulted in the Pupil Lab being chosen as the best choice.
 
-
-
-
+This device is capable of gaze estimation with 0.6 degree of visual angle (0.08 degree precision) with a processing pipeline latency of only 0.045 seconds, blink detection, pupil size monitoring and more. The glasses-like headset eye tracker, presented at Figure 14, consists of two RGB cameras with an IR filter and one global directed RGB camera at the front of the user. The frontal camera is able to capture an image at a max resolution of 1920x1080 pixels at 30Hz with a 90-degree diagonal field of view. Two IR cameras, which can operate up to 200Hz, are located at glasses frames and aimed directly at the eyes of the subject. 
+Software used in Pupil Lab uses the “dark pupil” detection method,presented at \Ref{fig}{fig:pupilLab}, thus, IR cameras must be able to capture video at a specific range of the IR spectrum, in this device it is a 860nm wavelength.  Each image captured by the IR camera is analyzed by open source Pupil Lab software. Thanks to the flexibility and extensibility of the source code, additional sensors can be added to this eye tracker. Additionally, in the case of this research, a simple luxometer was added to eye tracker as an external sensor.  
+The BH1603FVC Rohm\footnote{\url{http://rohmfs.rohm.com/en/products/databook/datasheet/ic/sensor/light/bh1603fvc-e.pdf}} \Ref{fig}{fig:luxometer} analog current output ambient light sensor was used to determine the amount of light cast at the pupil. It is a device with a compacted surface of 3.0 x 1.6 mm and a spectral sensitivity close to human eye sensitivity.  The sensor is capable of measuring ambient light in a range of 0 - 1 000 lux on H-Gain Mode, 0 – 10 000 in M-Gain and 0 – 100 000 on L-Gain.  To measure which range will be most suitable for the conducted experiment the sensor was placed with 50cm range from LED lamp. This experiment gave values from 6 000 to 9 000 lux, which remains in the H-Gain range of the sensor and in that mode the sensor was calibrated. This sensor was placed near the IR camera of the left eye, and only these eye responses are recorded during the experiment.
 \begin{figure}[H]
 	\captionsetup[subfigure]{justification=centering}
 	\centering
-	\begin{subfigure}[b]{0.5\textwidth}
+	\begin{subfigure}[b]{0.3\textwidth}
 		\centering
 		\includegraphics[width=0.9\textwidth]{img/pupilLab.png}
 		\caption{Pupil Lab eye tracker}
-		\label{fig:pupilLab}
+		\label{fig:pupilLab_e}
 	\end{subfigure}
 	~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc. 
 	%(or a blank line to force the subfigure onto a new line)
@@ -300,23 +312,127 @@ The BH1603FVC Rohm analog current output ambient light sensor was used to determ
 	\caption{Pupil Lab eye tracker and BH1603FVC Rohm sensor. Source https://bit.ly/2TH3hby https://bit.ly/2VbrV1d}	
 	\label{fig:sensors}
 \end{figure}
+To recognize and measure the changes of the pupil over time, the Pupil Lab method was used, as a default for the hardware. The detection method used in the software provided by Pupil Lab consists of 7 steps, presented at \Ref{fig}{fig:pupilLab}. First the image of eye is converted to grayscale. Using a Haar-like feature, the region of interest – the estimated region where pupil can be – is calculated, and significantly cut the unwanted pixels from source image (\Ref{fig}{fig:pupilLab1}). The region obtained in the previous step is filtered by a Canny edge detector (\Ref{fig}{fig:pupilLab2}). For the region of interest, the histogram is calculated (\Ref{fig}{fig:pupilLab3}), and  the “dark” region is defined by the offset from the lowest spike in the histogram. All edges with spectral reflections and not in the “dark” region are excluded(\Ref{fig}{fig:pupilLab4}). Remaining edges are filtered and split into sub contours, based on the criteria of curvature continuity (\Ref{fig}{fig:pupilLab5}). Finally, the ellipse is fitted using the least square method and additional criteria like ellipse circumference (\Ref{fig}{fig:pupilLab6}).
+\begin{figure}[H]
+	\captionsetup[subfigure]{justification=centering}
+	\centering
+	\begin{subfigure}[b]{0.15\textwidth}
+		\centering
+		\includegraphics[width=0.9\textwidth]{img/PupilLab/1.png}
+		\caption{}
+		\label{fig:pupilLab1}
+	\end{subfigure}%
+	\begin{subfigure}[b]{0.15\textwidth}
+		\centering
+		\includegraphics[width=0.9\textwidth]{img/PupilLab/2.png}
+		\caption{}
+		\label{fig:pupilLab2}
+	\end{subfigure}%
+	\begin{subfigure}[b]{0.15\textwidth}
+	\centering
+	\includegraphics[width=0.9\textwidth]{img/PupilLab/3.png}
+	\caption{}
+	\label{fig:pupilLab3}
+\end{subfigure}
 
-\newpage
+	\begin{subfigure}[b]{0.15\textwidth}
+	\centering
+	\includegraphics[width=0.9\textwidth]{img/PupilLab/4.png}
+	\caption{}
+	\label{fig:pupilLab4}
+\end{subfigure}%
+\begin{subfigure}[b]{0.15\textwidth}
+	\centering
+	\includegraphics[width=0.9\textwidth]{img/PupilLab/5.png}
+	\caption{}
+	\label{fig:pupilLab5}
+\end{subfigure}%
+\begin{subfigure}[b]{0.15\textwidth}
+	\centering
+	\includegraphics[width=0.9\textwidth]{img/PupilLab/6.png}
+	\caption{}
+	\label{fig:pupilLab6}
+\end{subfigure}
+	\caption{Pupil recognition algorithm in PupilLab device.}	
+	\label{fig:pupilLab}
+\end{figure}
+
+\section{Experiment}
+In the experiment, various scenarios were tested. In each of them, the person on whom the experiment is carried out was asked to always look forward, with the freedom to move their head, without squinting eyes to ensure that both th eye-tracker and light detector will give the best results. The figures presented below show the deviation that can be treated as non-light triggered changes. Data from luxometer and eye-tracker gathered along the experiment was used to generate the artificial signal using \ref{equ:Pampelona}\cite{Pamplona}. The real data was plotted against the generated one to find how much those two signals differ at, example at \ref{fig:experiment}. All difference is treated as pupil change caused by non-light factors, such as emotion, accommodation, etc. 
+
+\begin{figure}[H]
+	\captionsetup[subfigure]{justification=centering}
+	\centering
+	\begin{subfigure}[b]{0.45\textwidth}
+		\centering
+		%\includegraphics[width=0.9\textwidth]{img/Experiment/1.png}
+			\includegraphics[width=0.9\textwidth]{img/PupilLab/6.png}
+		\caption{}
+		\label{fig:experiment1}
+	\end{subfigure}
+
+	\begin{subfigure}[b]{0.45\textwidth}
+		\centering
+		%\includegraphics[width=0.9\textwidth]{img/Experiment/2.png}
+			\includegraphics[width=0.9\textwidth]{img/PupilLab/6.png}
+		\caption{}
+		\label{fig:experiment2}
+	\end{subfigure}
+
+	\begin{subfigure}[b]{0.45\textwidth}
+		\centering
+		%\includegraphics[width=0.9\textwidth]{img/Experiment/3.png}
+			\includegraphics[width=0.9\textwidth]{img/PupilLab/6.png}
+		\caption{}
+		\label{fig:experiment3}
+	\end{subfigure}
+	\caption{Plot of data generated by \cite{Pamplona}, and data gathered by PupilLab  .}	
+	\label{fig:experiment}
+\end{figure}
+\section{Comparison of data and model}
+In \cite{Morelli} the cross-correlation technique has been shown as one possible way to compare data gathered in the conducted experiment and the modelled one. Described in the \Ref{equ}{equ:xcorr}, where  x[n] is the n point on the gathered real life data, and y[n] is the artificial generated signal. This equation returns values in rage -1 to 1, where 1 means that signals are the same, and -1 where signals are opposite.
+\begin{equation}
+\operatorname{norm}_{-} \operatorname{corr}(x, y)=\frac{\sum_{n=0}^{n-1} x[n] * y[n]}{\sqrt{\sum_{n=0}^{n-1} x[n]^{2} * \sum_{n=0}^{n-1} y[n]^{2}}}
+\label{equ:xcorr}
+\end{equation}
+\begin{figure}[H]
+	\captionsetup[subfigure]{justification=centering}
+	\centering
+	\begin{subfigure}[b]{0.45\textwidth}
+		\centering
+		%\includegraphics[width=0.9\textwidth]{img/Experiment/1.png}
+		\includegraphics[width=0.9\textwidth]{img/PupilLab/6.png}
+		\caption{}
+		\label{fig:crossCorrelation1}
+	\end{subfigure}
+	
+	\begin{subfigure}[b]{0.45\textwidth}
+		\centering
+		%\includegraphics[width=0.9\textwidth]{img/Experiment/2.png}
+		\includegraphics[width=0.9\textwidth]{img/PupilLab/6.png}
+		\caption{}
+		\label{fig:crossCorrelation2}
+	\end{subfigure}
+	
+	\begin{subfigure}[b]{0.45\textwidth}
+		\centering
+		%\includegraphics[width=0.9\textwidth]{img/Experiment/3.png}
+		\includegraphics[width=0.9\textwidth]{img/PupilLab/6.png}
+		\caption{}
+		\label{fig:crossCorrelation3}
+	\end{subfigure}
+	\caption{Cross correlation between data gathered by devices and the artificial one.}	
+	\label{fig:crossCorrelation}
+\end{figure}
+
+
 \section{Conclusion}
 Based on the existing models, the method for measuring a light-adapted pupil diameter was implemented. We propose a solution to predict pupil size changes under visible light stimuli. The change in pupil size under the influence of light has been modeled and tested against the existing popular models. 
-Subsequent pupillary measurements will be made with a different physiological index. We observed that the pupil diameter changes each fixation cross location in the different emotional state \cite{Raiturkar}. The magnitude of the pupil is strongly correlated with visual attention and task performance \cite{Ebitz}. The numerical accuracy of different variants of integral image computation algorithms give the possibility of multiple evaluation of different statistical characteristics of the image \cite{Puchala} to extract the differences from different parameters of the pupil size. 
-The other solution is based on artificial neural networks \cite{Garbaa} \cite{Lipinski} to predict the pupillary response and factor localization. We have adopted this solution due to its simplicity and generality. The results produced by our models are in agreement with observed behavior in humans and can be used in the eye-gaze tracking method in point of interest and attention estimation
+Subsequent pupillary measurements will be made with a different physiological index. We observed that the pupil diameter changes each fixation cross location in the different emotional state \cite{Raiturkar}. The magnitude of the pupil is strongly correlated with visual attention and task performance \cite{Ebitz}. The numerical accuracy of different variants of integral image computation algorithms allow for the possibility of multiple evaluations of different statistical characteristics of the image \cite{Puchala} to extract the differences from different parameters of the pupil size. 
+The other solution is based on artificial neural networks \cite{Garbaa} \cite{Lipinski} used to predict the pupillary response and factor localization. We have adopted this solution due to its simplicity and generality. The results produced by our models are in agreement with observed behavior in humans and can be used in the eye-gaze tracking method in point of interest and attention estimation
 We believe that this work can contribute to investigations of human emotion by Human Pupil Dilation. Our results should find applicability in several areas requiring eye-tracking systems, as well as in biofeedback systems. 
-\subsection{Application}
-All plots were generated in Python using the SciPy module (in particular numPy and matplotlib), which ensures the fast coding of user interface and logic of the software.
-In this software, the user can alter field diameter, age, mono/binocular effect and turn on/off the models to be plotted. Thanks to the built-in SciPy default NavigationToolbar, the user is able to create a snapshot of a plot, change its values on an axis, or manipulate the style of lines.
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.48\textwidth]{img/app.png}
-	\caption{Application GUI}	
-	\label{fig:app}
-\end{figure}
-\noindent Scripts can be found at:\\ \url{https://github.com/MenosGrandes/PupilDiameter}, available freely and open-source
+
+Scripts \url{https://github.com/MenosGrandes/PupilDiameter}, available freely and open-source
 \begin{thebibliography}{99}
 \bibitem{Saladin}Saladin K.,  Anatomy and physiology. New York: McGraw-Hill, 2012
 \bibitem{Hess}Hess E., and Polt J.,  Pupil Size as Related to Interest Value of Visual Stimuli. Science, 132(3423), pp.349-350, 1960
@@ -334,7 +450,6 @@ In this software, the user can alter field diameter, age, mono/binocular effect 
 \bibitem{Walraven}Walraven P. The virtual pupil. Journal of Modern Optics, 56(20), pp.2251-2253, 2009
 \bibitem{Watson}Watson A. and Yellott J. A unified formula for light-adapted pupil size. Journal of Vision, 12(10), pp.12-12, 2012
 \bibitem{Raiturkar}Raiturkar P., Kleinsmith  A., Keil A., Banerjee A., and Jain E. Decoupling light reflex from pupillary dilation to measure emotional arousal in videos. SAP '16) ACM, New York, NY, USA, 89-96,  2016
-\bibitem{Ebitz}Ebitz R., Pearson J. and Platt M. Pupil size and social vigilance in rhesus macaques. Frontiers in Neuroscience, 8, 2014
 \bibitem{Garbaa}Garbaa H., Jackowska-Strumillo L., Grudzien  K., Romanowski A., (2014) Neural network approach to ECT inverse problem solving for estimation of gravitational solids flow Computer Science and Information Systems (FedCSIS),
 \bibitem{Lipinski}Lipinski P. (2011). Watermarking software in practical applications. Bulletin of the Polish Academy of Sciences: Technical Sciences, 59(1).
 \bibitem{Moon}Moon P. and Spencer, D. (1944). The Transient Stiles-Crawford Effect. Journal of the Optical Society of America, 34(12), p.744.
@@ -346,8 +461,10 @@ In this software, the user can alter field diameter, age, mono/binocular effect 
 \bibitem{Blanchard}Blanchard J. (1918). The Brightness Sensibility of the Retina. Physical Review, 11(2), pp.81-99.
 \bibitem{Reeves}Reeves P. (1918). Rate of pupillary dilation and contraction. Psychological Review, 25(4), pp.330-340.
 \bibitem{Puchala}Puchala D., Stokfiszewski K., Numerical Accuracy of Integral Images
+\bibitem{Ebitz}Ebitz, R., Pearson, J. and Platt, M. (2014). Pupil size and social vigilance in rhesus macaques. Frontiers in Neuroscience, 8.
 Computation Algorithms, IET Image Processing, vol. 12, no. 1, pp. 31-41,
-2018.
-
+\bibitem{Fan}Fan, X., Yao, G. (2011). Modeling Transient Pupillary Light Reflex Induced by a Short Light Flash. IEEE Transactions on Biomedical Engineering, 58, 36-42.
+\bibitem{Suaste-Gomez}Suaste-Gómez, E., Reyes Cruz, H. (2011). Inverse dynamic model of the pupil muscle plant in the simulation of response to sound, stimuli and hippus. WIT Transactions on Biomedicine and Health. 15. 407-414. 10.2495/EHR110351. 
+\bibitem{Morelli}Morelli, M. S., Giannoni, A., Passino, C., Landini, L., Emdin, M., Vanello, N. (2016). A Cross-Correlational Analysis between Electroencephalographic and End-Tidal Carbon Dioxide Signals: Methodological Issues in the Presence of Missing Data and Real Data Results. Sensors (Basel, Switzerland), 16(11), 1828. doi:10.3390/s16111828
 \end{thebibliography}
 \end{document}
