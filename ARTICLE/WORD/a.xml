@@ -1,0 +1,982 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<b:Sources xmlns:b="http://schemas.openxmlformats.org/officeDocument/2006/bibliography" xmlns="http://schemas.openxmlformats.org/officeDocument/2006/bibliography" SelectedStyle="">
+<b:Source>
+<b:Year>1952</b:Year>
+<b:Volume>42</b:Volume>
+<b:BIBTEX_Entry>article</b:BIBTEX_Entry>
+<b:Comments>119 cites: </b:Comments>
+<b:SourceType>JournalArticle</b:SourceType>
+<b:Title>Pupil Size as Determined by Adapting Luminance*</b:Title>
+<b:Tag>de_Groot</b:Tag>
+<b:Publisher>The Optical Society</b:Publisher>
+<b:URL>http://dx.doi.org/10.1364/josa.42.000492</b:URL>
+<b:DOI>10.1364/josa.42.000492</b:DOI>
+<b:Author>
+<b:Author>
+<b:NameList>
+<b:Person>
+<b:Last>Groot</b:Last>
+<b:Middle>G.</b:Middle>
+<b:First>S.</b:First>
+</b:Person>
+<b:Person>
+<b:Last>Gebhard</b:Last>
+<b:Middle>W.</b:Middle>
+<b:First>J.</b:First>
+</b:Person>
+</b:NameList>
+</b:Author>
+</b:Author>
+<b:Pages>492-492</b:Pages>
+<b:JournalName>Journal of the Optical Society of America</b:JournalName>
+<b:Number>7</b:Number>
+<b:StandardNumber> ISSN: 0030-3941</b:StandardNumber>
+<b:ThesisType>journal-article</b:ThesisType>
+</b:Source>
+<b:Source>
+<b:BIBTEX_Entry>article</b:BIBTEX_Entry>
+<b:SourceType>JournalArticle</b:SourceType>
+<b:Author/>
+</b:Source>
+<b:Source>
+<b:Year>2008</b:Year>
+<b:Volume>45</b:Volume>
+<b:BIBTEX_Entry>article</b:BIBTEX_Entry>
+<b:Comments>578 cites: </b:Comments>
+<b:SourceType>JournalArticle</b:SourceType>
+<b:Title>The pupil as a measure of emotional arousal and autonomic activation</b:Title>
+<b:Tag>Bradley</b:Tag>
+<b:Publisher>Wiley</b:Publisher>
+<b:URL>http://dx.doi.org/10.1111/j.1469-8986.2008.00654.x</b:URL>
+<b:DOI>10.1111/j.1469-8986.2008.00654.x</b:DOI>
+<b:Author>
+<b:Author>
+<b:NameList>
+<b:Person>
+<b:Last>Bradley</b:Last>
+<b:Middle>M.</b:Middle>
+<b:First>Margaret</b:First>
+</b:Person>
+<b:Person>
+<b:Last>Miccoli</b:Last>
+<b:First>Laura</b:First>
+</b:Person>
+<b:Person>
+<b:Last>Escrig</b:Last>
+<b:Middle>A.</b:Middle>
+<b:First>Miguel</b:First>
+</b:Person>
+<b:Person>
+<b:Last>Lang</b:Last>
+<b:Middle>J.</b:Middle>
+<b:First>Peter</b:First>
+</b:Person>
+</b:NameList>
+</b:Author>
+</b:Author>
+<b:Pages>602-607</b:Pages>
+<b:JournalName>Psychophysiology</b:JournalName>
+<b:Number>4</b:Number>
+<b:StandardNumber> ISSN: 0048-5772</b:StandardNumber>
+<b:ThesisType>journal-article</b:ThesisType>
+</b:Source>
+<b:Source>
+<b:Year>2014</b:Year>
+<b:Volume>8</b:Volume>
+<b:BIBTEX_Entry>article</b:BIBTEX_Entry>
+<b:Comments>23 cites: </b:Comments>
+<b:SourceType>JournalArticle</b:SourceType>
+<b:Title>Pupil size and social vigilance in rhesus macaques</b:Title>
+<b:Tag>Ebitz</b:Tag>
+<b:Publisher>Frontiers Media SA</b:Publisher>
+<b:URL>http://dx.doi.org/10.3389/fnins.2014.00100</b:URL>
+<b:DOI>10.3389/fnins.2014.00100</b:DOI>
+<b:Author>
+<b:Author>
+<b:NameList>
+<b:Person>
+<b:Last>Ebitz</b:Last>
+<b:Middle>Becket</b:Middle>
+<b:First>R.</b:First>
+</b:Person>
+<b:Person>
+<b:Last>Pearson</b:Last>
+<b:Middle>M.</b:Middle>
+<b:First>John</b:First>
+</b:Person>
+<b:Person>
+<b:Last>Platt</b:Last>
+<b:Middle>L.</b:Middle>
+<b:First>Michael</b:First>
+</b:Person>
+</b:NameList>
+</b:Author>
+</b:Author>
+<b:JournalName>Frontiers in Neuroscience</b:JournalName>
+<b:StandardNumber> ISSN: 1662-453X</b:StandardNumber>
+<b:ThesisType>journal-article</b:ThesisType>
+</b:Source>
+<b:Source>
+<b:Year>2011</b:Year>
+<b:BIBTEX_Entry>article</b:BIBTEX_Entry>
+<b:Comments>Query date: 2019-08-07</b:Comments>
+<b:SourceType>JournalArticle</b:SourceType>
+<b:Title>Inverse dynamic model of the pupil muscle plant in the simulation of response to sound, stimuli and hippus</b:Title>
+<b:Tag>Suaste-Gomez</b:Tag>
+<b:Publisher>WIT Press</b:Publisher>
+<b:URL>http://dx.doi.org/10.2495/ehr110351</b:URL>
+<b:DOI>10.2495/ehr110351</b:DOI>
+<b:Author>
+<b:Author>
+<b:NameList>
+<b:Person>
+<b:Last>Gómez</b:Last>
+<b:Middle>Suaste</b:Middle>
+<b:First>E.</b:First>
+</b:Person>
+<b:Person>
+<b:Last>Cruz</b:Last>
+<b:Middle>Reyes</b:Middle>
+<b:First>H.</b:First>
+</b:Person>
+</b:NameList>
+</b:Author>
+</b:Author>
+<b:JournalName>Environmental Health and Biomedicine</b:JournalName>
+<b:ThesisType>proceedings-article</b:ThesisType>
+</b:Source>
+<b:Source>
+<b:Year>1936</b:Year>
+<b:Volume>121</b:Volume>
+<b:BIBTEX_Entry>article</b:BIBTEX_Entry>
+<b:Comments>47 cites:</b:Comments>
+<b:SourceType>JournalArticle</b:SourceType>
+<b:Title>The dependence of pupil size upon external light stimulus under static and variable conditions</b:Title>
+<b:Tag>Crawford</b:Tag>
+<b:Publisher>The Royal Society</b:Publisher>
+<b:URL>http://dx.doi.org/10.1098/rspb.1936.0072</b:URL>
+<b:DOI>10.1098/rspb.1936.0072</b:DOI>
+<b:Author>
+<b:Author>
+<b:NameList>
+<b:Person>
+<b:Last>Crawford</b:Last>
+<b:Middle>H.</b:Middle>
+<b:First>B.</b:First>
+</b:Person>
+</b:NameList>
+</b:Author>
+</b:Author>
+<b:Pages>376-395</b:Pages>
+<b:JournalName>Proceedings of the Royal Society of London. Series B - Biological Sciences</b:JournalName>
+<b:Number>823</b:Number>
+<b:StandardNumber> ISSN: 2053-9193</b:StandardNumber>
+<b:ThesisType>journal-article</b:ThesisType>
+</b:Source>
+<b:Source>
+<b:Year>1995</b:Year>
+<b:Volume>15</b:Volume>
+<b:BIBTEX_Entry>article</b:BIBTEX_Entry>
+<b:Comments>1 cites: </b:Comments>
+<b:SourceType>JournalArticle</b:SourceType>
+<b:Title>The effect of field of view size on steady-state pupil diameter</b:Title>
+<b:Tag>Stanley</b:Tag>
+<b:Publisher>Wiley</b:Publisher>
+<b:URL>http://dx.doi.org/10.1046/j.1475-1313.1995.9400019v.x</b:URL>
+<b:DOI>10.1046/j.1475-1313.1995.9400019v.x</b:DOI>
+<b:Author>
+<b:Author>
+<b:NameList>
+<b:Person>
+<b:Last>Stanley</b:Last>
+<b:Middle>A.</b:Middle>
+<b:First>Philip</b:First>
+</b:Person>
+<b:Person>
+<b:Last>Davies</b:Last>
+<b:Middle>Kelvin</b:Middle>
+<b:First>A.</b:First>
+</b:Person>
+</b:NameList>
+</b:Author>
+</b:Author>
+<b:Pages>601-603</b:Pages>
+<b:JournalName>Ophthalmic and Physiological Optics</b:JournalName>
+<b:Number>6</b:Number>
+<b:StandardNumber> ISSN: 0275-5408</b:StandardNumber>
+<b:ThesisType>journal-article</b:ThesisType>
+</b:Source>
+<b:Source>
+<b:Year>1999</b:Year>
+<b:BIBTEX_Entry>book</b:BIBTEX_Entry>
+<b:Comments>342 cites:</b:Comments>
+<b:SourceType>Book</b:SourceType>
+<b:Title>Contrast Sensitivity of the Human Eye and Its Effects on Image Quality</b:Title>
+<b:Tag>Barten</b:Tag>
+<b:Publisher>SPIE</b:Publisher>
+<b:URL>http://dx.doi.org/10.1117/3.353254</b:URL>
+<b:DOI>10.1117/3.353254</b:DOI>
+<b:Author>
+<b:Author>
+<b:NameList>
+<b:Person>
+<b:Last>Barten</b:Last>
+<b:Middle>G.</b:Middle>
+<b:First>Peter</b:First>
+</b:Person>
+</b:NameList>
+</b:Author>
+</b:Author>
+<b:ThesisType>book</b:ThesisType>
+</b:Source>
+<b:Source>
+<b:Year>1918</b:Year>
+<b:Volume>25</b:Volume>
+<b:BIBTEX_Entry>article</b:BIBTEX_Entry>
+<b:Comments>44 cites: </b:Comments>
+<b:SourceType>JournalArticle</b:SourceType>
+<b:Title>Rate of pupillary dilation and contraction.</b:Title>
+<b:Tag>Reeves</b:Tag>
+<b:Publisher>American Psychological Association (APA)</b:Publisher>
+<b:URL>http://dx.doi.org/10.1037/h0075293</b:URL>
+<b:DOI>10.1037/h0075293</b:DOI>
+<b:Author>
+<b:Author>
+<b:NameList>
+<b:Person>
+<b:Last>Reeves</b:Last>
+<b:First>Prentice</b:First>
+</b:Person>
+</b:NameList>
+</b:Author>
+</b:Author>
+<b:Pages>330-340</b:Pages>
+<b:JournalName>Psychological Review</b:JournalName>
+<b:Number>4</b:Number>
+<b:StandardNumber> ISSN: 0033-295X</b:StandardNumber>
+<b:ThesisType>journal-article</b:ThesisType>
+</b:Source>
+<b:Source>
+<b:Year>2018</b:Year>
+<b:Volume>12</b:Volume>
+<b:BIBTEX_Entry>article</b:BIBTEX_Entry>
+<b:Comments>1 cites: </b:Comments>
+<b:SourceType>JournalArticle</b:SourceType>
+<b:Title>Numerical accuracy of integral images computation algorithms</b:Title>
+<b:Tag>Puchala</b:Tag>
+<b:Publisher>Institution of Engineering and Technology (IET)</b:Publisher>
+<b:URL>http://dx.doi.org/10.1049/iet-ipr.2017.0161</b:URL>
+<b:DOI>10.1049/iet-ipr.2017.0161</b:DOI>
+<b:Author>
+<b:Author>
+<b:NameList>
+<b:Person>
+<b:Last>Puchala</b:Last>
+<b:First>Dariusz</b:First>
+</b:Person>
+<b:Person>
+<b:Last>Stokfiszewski</b:Last>
+<b:First>Kamil</b:First>
+</b:Person>
+</b:NameList>
+</b:Author>
+</b:Author>
+<b:Pages>31-41</b:Pages>
+<b:JournalName>IET Image Processing</b:JournalName>
+<b:Number>1</b:Number>
+<b:StandardNumber> ISSN: 1751-9659</b:StandardNumber>
+<b:ThesisType>journal-article</b:ThesisType>
+</b:Source>
+<b:Source>
+<b:Year>2016</b:Year>
+<b:Volume>16</b:Volume>
+<b:BIBTEX_Entry>article</b:BIBTEX_Entry>
+<b:Comments>2 cites: </b:Comments>
+<b:SourceType>JournalArticle</b:SourceType>
+<b:Title>A Cross-Correlational Analysis between Electroencephalographic and End-Tidal Carbon Dioxide Signals: Methodological Issues in the Presence of Missing Data and Real Data Results</b:Title>
+<b:Tag>Morelli</b:Tag>
+<b:Publisher>MDPI AG</b:Publisher>
+<b:URL>http://dx.doi.org/10.3390/s16111828</b:URL>
+<b:DOI>10.3390/s16111828</b:DOI>
+<b:Author>
+<b:Author>
+<b:NameList>
+<b:Person>
+<b:Last>Morelli</b:Last>
+<b:First>Maria</b:First>
+</b:Person>
+<b:Person>
+<b:Last>Giannoni</b:Last>
+<b:First>Alberto</b:First>
+</b:Person>
+<b:Person>
+<b:Last>Passino</b:Last>
+<b:First>Claudio</b:First>
+</b:Person>
+<b:Person>
+<b:Last>Landini</b:Last>
+<b:First>Luigi</b:First>
+</b:Person>
+<b:Person>
+<b:Last>Emdin</b:Last>
+<b:First>Michele</b:First>
+</b:Person>
+<b:Person>
+<b:Last>Vanello</b:Last>
+<b:First>Nicola</b:First>
+</b:Person>
+</b:NameList>
+</b:Author>
+</b:Author>
+<b:Pages>1828-1828</b:Pages>
+<b:JournalName>Sensors</b:JournalName>
+<b:Number>11</b:Number>
+<b:StandardNumber> ISSN: 1424-8220</b:StandardNumber>
+<b:ThesisType>journal-article</b:ThesisType>
+</b:Source>
+<b:Source>
+<b:Year>2011</b:Year>
+<b:Volume>59</b:Volume>
+<b:BIBTEX_Entry>article</b:BIBTEX_Entry>
+<b:SourceType>JournalArticle</b:SourceType>
+<b:Title>Watermarking software in practical applications</b:Title>
+<b:Tag>Lipinski</b:Tag>
+<b:DOI>10.2478/v10175-011-0004-3</b:DOI>
+<b:Author>
+<b:Author>
+<b:NameList>
+<b:Person>
+<b:Last>Lipinski</b:Last>
+<b:First>Piotr</b:First>
+</b:Person>
+</b:NameList>
+</b:Author>
+</b:Author>
+<b:Month>3</b:Month>
+<b:JournalName>Bulletin of the Polish Academy of Sciences: Technical Sciences</b:JournalName>
+</b:Source>
+<b:Source>
+<b:Year>2017</b:Year>
+<b:Volume>58</b:Volume>
+<b:BIBTEX_Entry>article</b:BIBTEX_Entry>
+<b:SourceType>JournalArticle</b:SourceType>
+<b:Title>Emotional arousal and recognition memory are differentially reflected in pupil diameter responses during emotional memory for negative events in younger and older adults</b:Title>
+<b:Tag>Hammerer</b:Tag>
+<b:DOI>10.1016/j.neurobiolaging.2017.06.021</b:DOI>
+<b:Author>
+<b:Author>
+<b:NameList>
+<b:Person>
+<b:Last>Hämmerer</b:Last>
+<b:First>Dorothea</b:First>
+</b:Person>
+<b:Person>
+<b:Last>Hopkins</b:Last>
+<b:First>Alexandra</b:First>
+</b:Person>
+<b:Person>
+<b:Last>Betts</b:Last>
+<b:First>Matthew</b:First>
+</b:Person>
+<b:Person>
+<b:Last>Maass</b:Last>
+<b:First>Anne</b:First>
+</b:Person>
+<b:Person>
+<b:Last>J Dolan</b:Last>
+<b:First>Ray</b:First>
+</b:Person>
+<b:Person>
+<b:Last>Duzel</b:Last>
+<b:First>Emrah</b:First>
+</b:Person>
+</b:NameList>
+</b:Author>
+</b:Author>
+<b:Month>6</b:Month>
+<b:JournalName>Neurobiology of Aging</b:JournalName>
+</b:Source>
+<b:Source>
+<b:Year>1967</b:Year>
+<b:Volume>30</b:Volume>
+<b:BIBTEX_Entry>article</b:BIBTEX_Entry>
+<b:Comments>19 cites: </b:Comments>
+<b:SourceType>JournalArticle</b:SourceType>
+<b:Title>Effect of photoexcitation of the two retinas on pupil size.</b:Title>
+<b:Tag>Doesschate</b:Tag>
+<b:Publisher>American Physiological Society</b:Publisher>
+<b:URL>http://dx.doi.org/10.1152/jn.1967.30.3.562</b:URL>
+<b:DOI>10.1152/jn.1967.30.3.562</b:DOI>
+<b:Author>
+<b:Author>
+<b:NameList>
+<b:Person>
+<b:Last>Doesschate</b:Last>
+<b:Middle>Ten</b:Middle>
+<b:First>J.</b:First>
+</b:Person>
+<b:Person>
+<b:Last>Alpern</b:Last>
+<b:First>M.</b:First>
+</b:Person>
+</b:NameList>
+</b:Author>
+</b:Author>
+<b:Pages>562-576</b:Pages>
+<b:JournalName>Journal of Neurophysiology</b:JournalName>
+<b:Number>3</b:Number>
+<b:StandardNumber> ISSN: 0022-3077</b:StandardNumber>
+<b:ThesisType>journal-article</b:ThesisType>
+</b:Source>
+<b:Source>
+<b:Year>2016</b:Year>
+<b:BIBTEX_Entry>article</b:BIBTEX_Entry>
+<b:Comments>2 cites: </b:Comments>
+<b:SourceType>JournalArticle</b:SourceType>
+<b:Title>Decoupling light reflex from pupillary dilation to measure emotional arousal in videos</b:Title>
+<b:Tag>Raiturkar</b:Tag>
+<b:Publisher>ACM Press</b:Publisher>
+<b:URL>http://dx.doi.org/10.1145/2931002.2931009</b:URL>
+<b:DOI>10.1145/2931002.2931009</b:DOI>
+<b:Author>
+<b:Author>
+<b:NameList>
+<b:Person>
+<b:Last>Raiturkar</b:Last>
+<b:First>Pallavi</b:First>
+</b:Person>
+<b:Person>
+<b:Last>Kleinsmith</b:Last>
+<b:First>Andrea</b:First>
+</b:Person>
+<b:Person>
+<b:Last>Keil</b:Last>
+<b:First>Andreas</b:First>
+</b:Person>
+<b:Person>
+<b:Last>Banerjee</b:Last>
+<b:First>Arunava</b:First>
+</b:Person>
+<b:Person>
+<b:Last>Jain</b:Last>
+<b:First>Eakta</b:First>
+</b:Person>
+</b:NameList>
+</b:Author>
+</b:Author>
+<b:JournalName>Proceedings of the ACM Symposium on Applied Perception - SAP '16</b:JournalName>
+<b:ThesisType>proceedings-article</b:ThesisType>
+</b:Source>
+<b:Source>
+<b:Year>1995</b:Year>
+<b:Volume>35</b:Volume>
+<b:BIBTEX_Entry>article</b:BIBTEX_Entry>
+<b:Comments>63 cites: </b:Comments>
+<b:SourceType>JournalArticle</b:SourceType>
+<b:Title>The form of the human pupil</b:Title>
+<b:Tag>Wyatt</b:Tag>
+<b:Publisher>Elsevier BV</b:Publisher>
+<b:URL>http://dx.doi.org/10.1016/0042-6989(94)00268-q</b:URL>
+<b:DOI>10.1016/0042-6989(94)00268-q</b:DOI>
+<b:Author>
+<b:Author>
+<b:NameList>
+<b:Person>
+<b:Last>Wyatt</b:Last>
+<b:Middle>J.</b:Middle>
+<b:First>Harry</b:First>
+</b:Person>
+</b:NameList>
+</b:Author>
+</b:Author>
+<b:Pages>2021-2036</b:Pages>
+<b:JournalName>Vision Research</b:JournalName>
+<b:Number>14</b:Number>
+<b:StandardNumber> ISSN: 0042-6989</b:StandardNumber>
+<b:ThesisType>journal-article</b:ThesisType>
+</b:Source>
+<b:Source>
+<b:Year>2009</b:Year>
+<b:Volume>56</b:Volume>
+<b:BIBTEX_Entry>article</b:BIBTEX_Entry>
+<b:Comments>1 cites: </b:Comments>
+<b:SourceType>JournalArticle</b:SourceType>
+<b:Title>The virtual pupil</b:Title>
+<b:Tag>Walraven</b:Tag>
+<b:Publisher>Informa UK Limited</b:Publisher>
+<b:URL>http://dx.doi.org/10.1080/09500340903380927</b:URL>
+<b:DOI>10.1080/09500340903380927</b:DOI>
+<b:Author>
+<b:Author>
+<b:NameList>
+<b:Person>
+<b:Last>Walraven</b:Last>
+<b:Middle>L.</b:Middle>
+<b:First>Pieter</b:First>
+</b:Person>
+</b:NameList>
+</b:Author>
+</b:Author>
+<b:Pages>2251-2253</b:Pages>
+<b:JournalName>Journal of Modern Optics</b:JournalName>
+<b:Number>20</b:Number>
+<b:StandardNumber> ISSN: 0950-0340</b:StandardNumber>
+<b:ThesisType>journal-article</b:ThesisType>
+</b:Source>
+<b:Source>
+<b:Year>2016</b:Year>
+<b:BIBTEX_Entry>article</b:BIBTEX_Entry>
+<b:Comments>2 cites: </b:Comments>
+<b:SourceType>JournalArticle</b:SourceType>
+<b:Title>Mouth features extraction for emotion classiﬁcation</b:Title>
+<b:Tag>Staniucha</b:Tag>
+<b:Publisher>IEEE</b:Publisher>
+<b:URL>http://dx.doi.org/10.15439/2016f390</b:URL>
+<b:DOI>10.15439/2016f390</b:DOI>
+<b:Author>
+<b:Author>
+<b:NameList>
+<b:Person>
+<b:Last>Wojciechowski</b:Last>
+<b:First>Adam</b:First>
+</b:Person>
+<b:Person>
+<b:Last>Staniucha</b:Last>
+<b:First>Robert</b:First>
+</b:Person>
+</b:NameList>
+</b:Author>
+</b:Author>
+<b:JournalName>Proceedings of the 2016 Federated Conference on Computer Science and Information Systems</b:JournalName>
+<b:ThesisType>proceedings-article</b:ThesisType>
+</b:Source>
+<b:Source>
+<b:Year>1981</b:Year>
+<b:Volume>65</b:Volume>
+<b:BIBTEX_Entry>article</b:BIBTEX_Entry>
+<b:Comments>92 cites: </b:Comments>
+<b:SourceType>JournalArticle</b:SourceType>
+<b:Title>The pupillary light reflex in normal subjects.</b:Title>
+<b:Tag>Ellis</b:Tag>
+<b:Publisher>BMJ</b:Publisher>
+<b:URL>http://dx.doi.org/10.1136/bjo.65.11.754</b:URL>
+<b:DOI>10.1136/bjo.65.11.754</b:DOI>
+<b:Author>
+<b:Author>
+<b:NameList>
+<b:Person>
+<b:Last>Ellis</b:Last>
+<b:Middle>J.</b:Middle>
+<b:First>C.</b:First>
+</b:Person>
+</b:NameList>
+</b:Author>
+</b:Author>
+<b:Pages>754-759</b:Pages>
+<b:JournalName>British Journal of Ophthalmology</b:JournalName>
+<b:Number>11</b:Number>
+<b:StandardNumber> ISSN: 0007-1161</b:StandardNumber>
+<b:ThesisType>journal-article</b:ThesisType>
+</b:Source>
+<b:Source>
+<b:Year>1960</b:Year>
+<b:Volume>132</b:Volume>
+<b:BIBTEX_Entry>article</b:BIBTEX_Entry>
+<b:SourceType>JournalArticle</b:SourceType>
+<b:Title>Pupil Size as Related to Interest Value of Visual Stimuli</b:Title>
+<b:BIBTEX_Abstract>Increases in the size of the pupil of the eye have been found to accompany the viewing of emotionally toned or interesting visual stimuli. A technique for recording such changes has been developed, and preliminary results with cats and human beings are reported with attention being given to differences between the sexes in response to particular types of material.</b:BIBTEX_Abstract>
+<b:Tag>Hess</b:Tag>
+<b:Publisher>American Association for the Advancement of Science</b:Publisher>
+<b:URL>https://science.sciencemag.org/content/132/3423/349</b:URL>
+<b:DOI>10.1126/science.132.3423.349</b:DOI>
+<b:Author>
+<b:Author>
+<b:NameList>
+<b:Person>
+<b:Last>Hess</b:Last>
+<b:Middle>H.</b:Middle>
+<b:First>Eckhard</b:First>
+</b:Person>
+<b:Person>
+<b:Last>Polt</b:Last>
+<b:Middle>M.</b:Middle>
+<b:First>James</b:First>
+</b:Person>
+</b:NameList>
+</b:Author>
+</b:Author>
+<b:Pages>349-350</b:Pages>
+<b:JournalName>Science</b:JournalName>
+<b:Number>3423</b:Number>
+<b:StandardNumber> ISSN: 0036-8075</b:StandardNumber>
+</b:Source>
+<b:Source>
+<b:Year>2015</b:Year>
+<b:Volume>6</b:Volume>
+<b:BIBTEX_Entry>article</b:BIBTEX_Entry>
+<b:Comments>2 cites: </b:Comments>
+<b:SourceType>JournalArticle</b:SourceType>
+<b:Title>Cognitive effort and pupil dilation in controlled and automatic processes</b:Title>
+<b:Tag>Querino</b:Tag>
+<b:Publisher>Walter de Gruyter GmbH</b:Publisher>
+<b:URL>http://dx.doi.org/10.1515/tnsci-2015-0017</b:URL>
+<b:DOI>10.1515/tnsci-2015-0017</b:DOI>
+<b:Author>
+<b:Author>
+<b:NameList>
+<b:Person>
+<b:Last>Querino</b:Last>
+<b:First>Emanuel</b:First>
+</b:Person>
+<b:Person>
+<b:Last>Santos</b:Last>
+<b:First>Lafaiete</b:First>
+</b:Person>
+<b:Person>
+<b:Last>Ginani</b:Last>
+<b:First>Giuliano</b:First>
+</b:Person>
+<b:Person>
+<b:Last>Nicolau</b:Last>
+<b:First>Eduardo</b:First>
+</b:Person>
+<b:Person>
+<b:Last>Miranda</b:Last>
+<b:First>Débora</b:First>
+</b:Person>
+<b:Person>
+<b:Last>Romano-Silva</b:Last>
+<b:First>Marco</b:First>
+</b:Person>
+<b:Person>
+<b:Last>Malloy-Diniz</b:Last>
+<b:First>Leandro</b:First>
+</b:Person>
+</b:NameList>
+</b:Author>
+</b:Author>
+<b:JournalName>Translational Neuroscience</b:JournalName>
+<b:Number>1</b:Number>
+<b:StandardNumber> ISSN: 2081-6936</b:StandardNumber>
+<b:ThesisType>journal-article</b:ThesisType>
+</b:Source>
+<b:Source>
+<b:Year>2009</b:Year>
+<b:Volume>28</b:Volume>
+<b:BIBTEX_Entry>article</b:BIBTEX_Entry>
+<b:SourceType>JournalArticle</b:SourceType>
+<b:Title>Photorealistic Models for Pupil Light Reflex and Iridal Pattern Deformation</b:Title>
+<b:Tag>Pamplona</b:Tag>
+<b:Publisher>ACM</b:Publisher>
+<b:BIBTEX_KeyWords>Face animation, image-based modelling, iris animation, photorealism, physiologically-based modelling</b:BIBTEX_KeyWords>
+<b:URL>http://doi.acm.org/10.1145/1559755.1559763</b:URL>
+<b:DOI>10.1145/1559755.1559763</b:DOI>
+<b:Author>
+<b:Author>
+<b:NameList>
+<b:Person>
+<b:Last>Pamplona</b:Last>
+<b:Middle>F.</b:Middle>
+<b:First>Vitor</b:First>
+</b:Person>
+<b:Person>
+<b:Last>Oliveira</b:Last>
+<b:Middle>M.</b:Middle>
+<b:First>Manuel</b:First>
+</b:Person>
+<b:Person>
+<b:Last>Baranoski</b:Last>
+<b:Middle>V. G.</b:Middle>
+<b:First>Gladimir</b:First>
+</b:Person>
+</b:NameList>
+</b:Author>
+</b:Author>
+<b:Pages>106:1--106:12</b:Pages>
+<b:Month>9</b:Month>
+<b:JournalName>ACM Trans. Graph.</b:JournalName>
+<b:Number>4</b:Number>
+<b:StandardNumber> ISSN: 0730-0301</b:StandardNumber>
+<b:City>New York, NY, USA</b:City>
+</b:Source>
+<b:Source>
+<b:Year>2011</b:Year>
+<b:Volume>58</b:Volume>
+<b:BIBTEX_Entry>article</b:BIBTEX_Entry>
+<b:Comments>6 cites: </b:Comments>
+<b:SourceType>JournalArticle</b:SourceType>
+<b:Title>Modeling Transient Pupillary Light Reflex Induced by a Short Light Flash</b:Title>
+<b:Tag>Fan</b:Tag>
+<b:Publisher>Institute of Electrical and Electronics Engineers (IEEE)</b:Publisher>
+<b:URL>http://dx.doi.org/10.1109/tbme.2010.2080678</b:URL>
+<b:DOI>10.1109/tbme.2010.2080678</b:DOI>
+<b:Author>
+<b:Author>
+<b:NameList>
+<b:Person>
+<b:Last>Fan</b:Last>
+<b:First>Xiaofei</b:First>
+</b:Person>
+<b:Person>
+<b:Last>Yao</b:Last>
+<b:First>Gang</b:First>
+</b:Person>
+</b:NameList>
+</b:Author>
+</b:Author>
+<b:Pages>36-42</b:Pages>
+<b:JournalName>IEEE Transactions on Biomedical Engineering</b:JournalName>
+<b:Number>1</b:Number>
+<b:StandardNumber> ISSN: 0018-9294</b:StandardNumber>
+<b:ThesisType>journal-article</b:ThesisType>
+</b:Source>
+<b:Source>
+<b:Year>2014</b:Year>
+<b:BIBTEX_Entry>article</b:BIBTEX_Entry>
+<b:Comments>Query date: 2019-08-07</b:Comments>
+<b:SourceType>JournalArticle</b:SourceType>
+<b:Title>Neural network approach to ECT inverse problem solving for estimation of gravitational solids flow</b:Title>
+<b:Tag>Garbaa</b:Tag>
+<b:Publisher>IEEE</b:Publisher>
+<b:URL>http://dx.doi.org/10.15439/2014f368</b:URL>
+<b:DOI>10.15439/2014f368</b:DOI>
+<b:Author>
+<b:Author>
+<b:NameList>
+<b:Person>
+<b:Last>Garbaa</b:Last>
+<b:First>Hela</b:First>
+</b:Person>
+<b:Person>
+<b:Last>Jackowska-Strumiłło</b:Last>
+<b:First>Lidia</b:First>
+</b:Person>
+<b:Person>
+<b:Last>Grudzień</b:Last>
+<b:First>Krzysztof</b:First>
+</b:Person>
+<b:Person>
+<b:Last>Romanowski</b:Last>
+<b:First>Andrzej</b:First>
+</b:Person>
+</b:NameList>
+</b:Author>
+</b:Author>
+<b:JournalName>Proceedings of the 2014 Federated Conference on Computer Science and Information Systems</b:JournalName>
+<b:ThesisType>proceedings-article</b:ThesisType>
+</b:Source>
+<b:Source>
+<b:Year>1990</b:Year>
+<b:BIBTEX_Entry>book</b:BIBTEX_Entry>
+<b:SourceType>Book</b:SourceType>
+<b:Title>Clinical Methods: The History, Physical, and Laboratory Examinations</b:Title>
+<b:Tag>Walker</b:Tag>
+<b:Publisher>Butterworth Publishers</b:Publisher>
+<b:Author>
+<b:Author>
+<b:NameList>
+<b:Person>
+<b:Last>Walker</b:Last>
+<b:First>Kenneth</b:First>
+</b:Person>
+<b:Person>
+<b:Last>Hall</b:Last>
+<b:First>Dallas</b:First>
+</b:Person>
+<b:Person>
+<b:Last>Hurst</b:Last>
+<b:Middle>Willis</b:Middle>
+<b:First>J.</b:First>
+</b:Person>
+</b:NameList>
+</b:Author>
+</b:Author>
+</b:Source>
+<b:Source>
+<b:Year>2012</b:Year>
+<b:Volume>12</b:Volume>
+<b:BIBTEX_Entry>article</b:BIBTEX_Entry>
+<b:Comments>108 cites: </b:Comments>
+<b:SourceType>JournalArticle</b:SourceType>
+<b:Title>A unified formula for light-adapted pupil size</b:Title>
+<b:Tag>Watson</b:Tag>
+<b:Publisher>Association for Research in Vision and Ophthalmology (ARVO)</b:Publisher>
+<b:URL>http://dx.doi.org/10.1167/12.10.12</b:URL>
+<b:DOI>10.1167/12.10.12</b:DOI>
+<b:Author>
+<b:Author>
+<b:NameList>
+<b:Person>
+<b:Last>Watson</b:Last>
+<b:Middle>B.</b:Middle>
+<b:First>A.</b:First>
+</b:Person>
+<b:Person>
+<b:Last>Yellott</b:Last>
+<b:Middle>I.</b:Middle>
+<b:First>J.</b:First>
+</b:Person>
+</b:NameList>
+</b:Author>
+</b:Author>
+<b:Pages>12-12</b:Pages>
+<b:JournalName>Journal of Vision</b:JournalName>
+<b:Number>10</b:Number>
+<b:StandardNumber> ISSN: 1534-7362</b:StandardNumber>
+<b:ThesisType>journal-article</b:ThesisType>
+</b:Source>
+<b:Source>
+<b:Year>1944</b:Year>
+<b:Volume>34</b:Volume>
+<b:BIBTEX_Entry>article</b:BIBTEX_Entry>
+<b:Comments>2 cites: </b:Comments>
+<b:SourceType>JournalArticle</b:SourceType>
+<b:Title>The Transient Stiles-Crawford Effect</b:Title>
+<b:Tag>Moon</b:Tag>
+<b:Publisher>The Optical Society</b:Publisher>
+<b:URL>http://dx.doi.org/10.1364/josa.34.000744</b:URL>
+<b:DOI>10.1364/josa.34.000744</b:DOI>
+<b:Author>
+<b:Author>
+<b:NameList>
+<b:Person>
+<b:Last>Moon</b:Last>
+<b:First>Parry</b:First>
+</b:Person>
+<b:Person>
+<b:Last>Spencer</b:Last>
+<b:Middle>Eberle</b:Middle>
+<b:First>Domina</b:First>
+</b:Person>
+</b:NameList>
+</b:Author>
+</b:Author>
+<b:Pages>744-744</b:Pages>
+<b:JournalName>Journal of the Optical Society of America</b:JournalName>
+<b:Number>12</b:Number>
+<b:StandardNumber> ISSN: 0030-3941</b:StandardNumber>
+<b:ThesisType>journal-article</b:ThesisType>
+</b:Source>
+<b:Source>
+<b:Year>1994</b:Year>
+<b:Volume>35</b:Volume>
+<b:BIBTEX_Entry>article</b:BIBTEX_Entry>
+<b:SourceType>JournalArticle</b:SourceType>
+<b:Title>Factors affecting light-adapted pupil size in normal human subjects</b:Title>
+<b:Tag>Winn</b:Tag>
+<b:Author>
+<b:Author>
+<b:NameList>
+<b:Person>
+<b:Last>Winn</b:Last>
+<b:First>Barry</b:First>
+</b:Person>
+<b:Person>
+<b:Last>Whitaker</b:Last>
+<b:First>David</b:First>
+</b:Person>
+<b:Person>
+<b:Last>Elliott</b:Last>
+<b:First>David</b:First>
+</b:Person>
+<b:Person>
+<b:Last>Phillips</b:Last>
+<b:Middle>J.</b:Middle>
+<b:First>N.</b:First>
+</b:Person>
+</b:NameList>
+</b:Author>
+</b:Author>
+<b:Pages>1132-7</b:Pages>
+<b:Month>3</b:Month>
+<b:JournalName>Investigative ophthalmology &amp; visual science</b:JournalName>
+</b:Source>
+<b:Source>
+<b:Year>1926</b:Year>
+<b:Volume>12</b:Volume>
+<b:BIBTEX_Entry>article</b:BIBTEX_Entry>
+<b:Comments>156 cites:</b:Comments>
+<b:SourceType>JournalArticle</b:SourceType>
+<b:Title>The Fundamentals of Glare and Visibility</b:Title>
+<b:Tag>Holladay</b:Tag>
+<b:Publisher>The Optical Society</b:Publisher>
+<b:URL>http://dx.doi.org/10.1364/josa.12.000271</b:URL>
+<b:DOI>10.1364/josa.12.000271</b:DOI>
+<b:Author>
+<b:Author>
+<b:NameList>
+<b:Person>
+<b:Last>Holladay</b:Last>
+<b:Middle>L.</b:Middle>
+<b:First>L.</b:First>
+</b:Person>
+</b:NameList>
+</b:Author>
+</b:Author>
+<b:Pages>271-271</b:Pages>
+<b:JournalName>Journal of the Optical Society of America</b:JournalName>
+<b:Number>4</b:Number>
+<b:StandardNumber> ISSN: 0030-3941</b:StandardNumber>
+<b:ThesisType>journal-article</b:ThesisType>
+</b:Source>
+<b:Source>
+<b:Year>1918</b:Year>
+<b:Volume>11</b:Volume>
+<b:BIBTEX_Entry>article</b:BIBTEX_Entry>
+<b:Comments>44 cites:</b:Comments>
+<b:SourceType>JournalArticle</b:SourceType>
+<b:Title>The Brightness Sensibility of the Retina</b:Title>
+<b:Tag>Blanchard</b:Tag>
+<b:Publisher>American Physical Society (APS)</b:Publisher>
+<b:URL>http://dx.doi.org/10.1103/physrev.11.81</b:URL>
+<b:DOI>10.1103/physrev.11.81</b:DOI>
+<b:Author>
+<b:Author>
+<b:NameList>
+<b:Person>
+<b:Last>Blanchard.</b:Last>
+<b:First>Julian</b:First>
+</b:Person>
+</b:NameList>
+</b:Author>
+</b:Author>
+<b:Pages>81-99</b:Pages>
+<b:JournalName>Physical Review</b:JournalName>
+<b:Number>2</b:Number>
+<b:StandardNumber> ISSN: 0031-899X</b:StandardNumber>
+<b:ThesisType>journal-article</b:ThesisType>
+</b:Source>
+<b:Source>
+<b:Year>1999</b:Year>
+<b:Volume>19</b:Volume>
+<b:BIBTEX_Entry>article</b:BIBTEX_Entry>
+<b:Comments>1 cites: </b:Comments>
+<b:SourceType>JournalArticle</b:SourceType>
+<b:Title>An extension of an accommodation and convergence model of emmetropization to include the effects of illumination intensity</b:Title>
+<b:Tag>Blackie</b:Tag>
+<b:Publisher>Wiley</b:Publisher>
+<b:URL>http://dx.doi.org/10.1046/j.1475-1313.1999.00436.x</b:URL>
+<b:DOI>10.1046/j.1475-1313.1999.00436.x</b:DOI>
+<b:Author>
+<b:Author>
+<b:NameList>
+<b:Person>
+<b:Last>Blackie</b:Last>
+<b:Middle>A.</b:Middle>
+<b:First>C.</b:First>
+</b:Person>
+<b:Person>
+<b:Last>Howland</b:Last>
+<b:Middle>C.</b:Middle>
+<b:First>H.</b:First>
+</b:Person>
+</b:NameList>
+</b:Author>
+</b:Author>
+<b:Pages>112-125</b:Pages>
+<b:JournalName>Ophthalmic and Physiological Optics</b:JournalName>
+<b:Number>2</b:Number>
+<b:StandardNumber> ISSN: 0275-5408</b:StandardNumber>
+<b:ThesisType>journal-article</b:ThesisType>
+</b:Source>
+</b:Sources>
